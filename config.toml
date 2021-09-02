@@ -13,7 +13,6 @@ footnotereturnlinkcontents = "↩"
 MetaDataFormat = "yaml" # format of a new post
 enableGitInfo = false
 publishDir = "docs"
-output_dir: "docs"
 
 [markup]
   defaultMarkdownHandler = "goldmark"
