@@ -8,6 +8,15 @@
     <language>en-us</language>
     <lastBuildDate>Tue, 31 Jan 2017 00:00:00 +0000</lastBuildDate><atom:link href="https://jiaduoli2000.github.io/cn/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Bookdown制作图书&#43;GiteePages展示</title>
+      <link>https://jiaduoli2000.github.io/cn/post/2021-09-02-test/</link>
+      <pubDate>Thu, 02 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://jiaduoli2000.github.io/cn/post/2021-09-02-test/</guid>
+      <description>在读书时常常看到一些纸质书的前言介绍里会提供图书的网页电子版本，这个表达有一些拗口，暂且这样叫吧。比如说，这一本《 用bookdown制作图书</description>
+    </item>
+    
+    <item>
       <title>使用Zotero和Scrivener进行配合写作</title>
       <link>https://jiaduoli2000.github.io/cn/post/how-to-connected-zotero-scrivenet/</link>
       <pubDate>Tue, 31 Aug 2021 00:00:00 +0000</pubDate>
@@ -176,6 +185,33 @@
       
       <guid>https://jiaduoli2000.github.io/cn/post/possion/</guid>
       <description>1.模型简介 [[泊松分布]]的方差和均值相等。当响应变量观测的方差比依据泊松分布预测的方差大时，泊松 回归可能发生过度离势。由于处理计数型数据</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://jiaduoli2000.github.io/cn/post/2021-09-02-bookdown%E5%88%B6%E4%BD%9C%E5%9B%BE%E4%B9%A6-giteepages%E5%B1%95%E7%A4%BA/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jiaduoli2000.github.io/cn/post/2021-09-02-bookdown%E5%88%B6%E4%BD%9C%E5%9B%BE%E4%B9%A6-giteepages%E5%B1%95%E7%A4%BA/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://jiaduoli2000.github.io/cn/post/2021-09-02-cn-post-2021-09-02-bookdown/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jiaduoli2000.github.io/cn/post/2021-09-02-cn-post-2021-09-02-bookdown/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://jiaduoli2000.github.io/cn/post/2021-09-02-how-to-make-a-book-by-bookdown/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jiaduoli2000.github.io/cn/post/2021-09-02-how-to-make-a-book-by-bookdown/</guid>
+      <description></description>
     </item>
     
   </channel>
