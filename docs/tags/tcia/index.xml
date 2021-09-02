@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>tcia on Blog Lee | 阿狸的Blog</title>
-    <link>https://shixiangwang.github.io/home/tags/tcia/</link>
+    <link>https://jiaduoli2000.github.io/tags/tcia/</link>
     <description>Recent content in tcia on Blog Lee | 阿狸的Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 07 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://shixiangwang.github.io/home/tags/tcia/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 07 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://jiaduoli2000.github.io/tags/tcia/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>TCIA数据库获取影像DICM文件</title>
-      <link>https://shixiangwang.github.io/home/cn/post/tcia-dicm/</link>
+      <link>https://jiaduoli2000.github.io/cn/post/tcia-dicm/</link>
       <pubDate>Sat, 07 Aug 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://shixiangwang.github.io/home/cn/post/tcia-dicm/</guid>
+      <guid>https://jiaduoli2000.github.io/cn/post/tcia-dicm/</guid>
       <description>大家好，我是阿狸，这里是阿狸笔记，今天的内容是我自学Mimics软件的第二集。上一节，我学会了如何安装Mimics。软件安装好了之后，要进一</description>
     </item>
     

@@ -111,12 +111,12 @@
 <p style="text-align:right;">
   分类:
   
-    <a href="https://shixiangwang.github.io/home/categories/r">r</a> &nbsp
+    <a href="https://jiaduoli2000.github.io/categories/r">r</a> &nbsp
   
   <br>
   标签:
   
-    <a href="https://shixiangwang.github.io/home/tags/svm">svm</a> &nbsp
+    <a href="https://jiaduoli2000.github.io/tags/svm">svm</a> &nbsp
   
 </p>
 
@@ -130,7 +130,7 @@
 
 
 
-<script src="https://shixiangwang.github.io/home/cn/post/r-svm-support/index_files/header-attrs/header-attrs.js"></script>
+<script src="https://jiaduoli2000.github.io/cn/post/r-svm-support/index_files/header-attrs/header-attrs.js"></script>
 
 
 <p>今天，第一次尝试用R Markdown来写学习笔记，这是一个边学边记录的过程，今天的内容是支持向量机（Support Vector Machines），简称SVM。</p>
@@ -150,7 +150,7 @@
 <pre class="r"><code>library(ggplot2)</code></pre>
 <pre class="r"><code>qplot(Petal.Length,Petal.Width,data = iris,
       color=Species)</code></pre>
-<p><img src="https://shixiangwang.github.io/home/cn/post/r-svm-support/index_files/figure-html/unnamed-chunk-4-1.png" width="672" /></p>
+<p><img src="https://jiaduoli2000.github.io/cn/post/r-svm-support/index_files/figure-html/unnamed-chunk-4-1.png" width="672" /></p>
 <div class="figure">
 <img src="https://gitee.com/alingyisheng/tupian/raw/master/img/20210827234155.png" alt="" />
 <p class="caption">20210827234155</p>
@@ -204,7 +204,7 @@ summary(mymodel)</code></pre>
 <pre class="r"><code>plot(mymodel,data = iris,
      Petal.Width~Petal.Length,
      slice = list(Sepal.Width = 3, Sepal.Length = 4))</code></pre>
-<p><img src="https://shixiangwang.github.io/home/cn/post/r-svm-support/index_files/figure-html/unnamed-chunk-7-1.png" width="672" /></p>
+<p><img src="https://jiaduoli2000.github.io/cn/post/r-svm-support/index_files/figure-html/unnamed-chunk-7-1.png" width="672" /></p>
 <div class="figure">
 <img src="https://gitee.com/alingyisheng/tupian/raw/master/img/20210827234727.png" alt="" />
 <p class="caption">20210827234727</p>
@@ -255,7 +255,7 @@ summary(mymodel)</code></pre>
 <pre class="r"><code>plot(mymodel,data = iris,
      Petal.Width~Petal.Length,
      slice = list(Sepal.Width = 3, Sepal.Length = 4))</code></pre>
-<p><img src="https://shixiangwang.github.io/home/cn/post/r-svm-support/index_files/figure-html/unnamed-chunk-10-1.png" width="672" /></p>
+<p><img src="https://jiaduoli2000.github.io/cn/post/r-svm-support/index_files/figure-html/unnamed-chunk-10-1.png" width="672" /></p>
 <pre class="r"><code>pred &lt;- predict(mymodel,iris)
 tab &lt;- table(Predicted = pred,Actual = iris$Species)
 tab</code></pre>
@@ -300,7 +300,7 @@ summary(mymodel)</code></pre>
 <pre class="r"><code>plot(mymodel,data = iris,
      Petal.Width~Petal.Length,
      slice = list(Sepal.Width = 3, Sepal.Length = 4))</code></pre>
-<p><img src="https://shixiangwang.github.io/home/cn/post/r-svm-support/index_files/figure-html/unnamed-chunk-11-1.png" width="672" /></p>
+<p><img src="https://jiaduoli2000.github.io/cn/post/r-svm-support/index_files/figure-html/unnamed-chunk-11-1.png" width="672" /></p>
 <pre class="r"><code>pred &lt;- predict(mymodel,iris)
 tab &lt;- table(Predicted = pred,Actual = iris$Species)
 tab</code></pre>
@@ -341,7 +341,7 @@ summary(mymodel)</code></pre>
 <pre class="r"><code>plot(mymodel,data = iris,
      Petal.Width~Petal.Length,
      slice = list(Sepal.Width = 3, Sepal.Length = 4))</code></pre>
-<p><img src="https://shixiangwang.github.io/home/cn/post/r-svm-support/index_files/figure-html/unnamed-chunk-12-1.png" width="672" /></p>
+<p><img src="https://jiaduoli2000.github.io/cn/post/r-svm-support/index_files/figure-html/unnamed-chunk-12-1.png" width="672" /></p>
 <pre class="r"><code>pred &lt;- predict(mymodel,iris)
 tab &lt;- table(Predicted = pred,Actual = iris$Species)
 tab</code></pre>
@@ -369,7 +369,7 @@ cost：2<sup>2,2</sup>3,2<sup>4,2</sup>5,2<sup>6,2</sup>7,2<sup>8,2</sup>9。</p
 <p>这样就会得到：11×8种组合。组合越多，可能需要的时间就越长。</p>
 <p>绘制tmodel：</p>
 <pre class="r"><code>plot(tmodel)</code></pre>
-<p><img src="https://shixiangwang.github.io/home/cn/post/r-svm-support/index_files/figure-html/unnamed-chunk-14-1.png" width="672" />
+<p><img src="https://jiaduoli2000.github.io/cn/post/r-svm-support/index_files/figure-html/unnamed-chunk-14-1.png" width="672" />
 <img src="https://gitee.com/alingyisheng/tupian/raw/master/img/20210827235015.png" alt="20210827235015" />
 参数对应较暗的区域意味着更好的结果在这些区域。根据图示我们可以缩小一下<code>cost</code>的范围：</p>
 <pre class="r"><code>set.seed(124)
@@ -377,7 +377,7 @@ tmodel &lt;- tune(svm,Species~.,data = iris,
                ranges = list(epsilon = seq(0,1,0.1,),
                cost = 2^(2:7)))
 plot(tmodel)</code></pre>
-<p><img src="https://shixiangwang.github.io/home/cn/post/r-svm-support/index_files/figure-html/unnamed-chunk-15-1.png" width="672" />
+<p><img src="https://jiaduoli2000.github.io/cn/post/r-svm-support/index_files/figure-html/unnamed-chunk-15-1.png" width="672" />
 <img src="https://gitee.com/alingyisheng/tupian/raw/master/img/20210827235052.png" alt="20210827235052" />
 我们来看看tmodel的摘要：</p>
 <pre class="r"><code>summary(tmodel)</code></pre>
@@ -493,7 +493,7 @@ summary(mymodel)</code></pre>
 <pre class="r"><code>plot(mymodel,data = iris,
      Petal.Width~Petal.Length,
      slice = list(Sepal.Width = 3, Sepal.Length = 4))</code></pre>
-<p><img src="https://shixiangwang.github.io/home/cn/post/r-svm-support/index_files/figure-html/unnamed-chunk-18-1.png" width="672" />
+<p><img src="https://jiaduoli2000.github.io/cn/post/r-svm-support/index_files/figure-html/unnamed-chunk-18-1.png" width="672" />
 <img src="https://gitee.com/alingyisheng/tupian/raw/master/img/20210827235136.png" alt="20210827235136" /></p>
 </div>
 <div id="最佳模型的混淆矩阵及分类错误" class="section level3">
@@ -517,7 +517,7 @@ tab</code></pre>
   
 <nav class="post-nav">
   <span class="nav-prev">&larr; <a href="../../../cn/post/fydeos/">FydeOS折腾记录</a></span>
-  <span class="nav-next"></span>
+  <span class="nav-next"><a href="../../../cn/post/how-to-push-test-to-gitee/">如何推送本地内容到码云（Gitee）？</a> &rarr;</span>
 </nav>
 <script type="text/javascript">
 document.addEventListener('keyup', function(e) {
@@ -528,6 +528,8 @@ document.addEventListener('keyup', function(e) {
     url = '\/cn\/post\/fydeos\/';
     
   } else if (e.which == 39) {  
+    
+    url = '\/cn\/post\/how-to-push-test-to-gitee\/';
     
   }
   if (url) window.location = url;

@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>svm on Blog Lee | 阿狸的Blog</title>
-    <link>https://shixiangwang.github.io/home/tags/svm/</link>
+    <link>https://jiaduoli2000.github.io/tags/svm/</link>
     <description>Recent content in svm on Blog Lee | 阿狸的Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 27 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://shixiangwang.github.io/home/tags/svm/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 27 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://jiaduoli2000.github.io/tags/svm/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>R语言—支持向量机（SVM）</title>
-      <link>https://shixiangwang.github.io/home/cn/post/r-svm-support/</link>
+      <link>https://jiaduoli2000.github.io/cn/post/r-svm-support/</link>
       <pubDate>Fri, 27 Aug 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://shixiangwang.github.io/home/cn/post/r-svm-support/</guid>
+      <guid>https://jiaduoli2000.github.io/cn/post/r-svm-support/</guid>
       <description>今天，第一次尝试用R Markdown来写学习笔记，这是一个边学边记录的过程，今天的内容是支持向量机（Support Vector Machines），简称</description>
     </item>
     

@@ -2,279 +2,189 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>About on Blog Lee | 阿狸的Blog</title>
-    <link>https://shixiangwang.github.io/home/</link>
+    <link>https://jiaduoli2000.github.io/</link>
     <description>Recent content in About on Blog Lee | 阿狸的Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 25 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://shixiangwang.github.io/home/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 25 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://jiaduoli2000.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>使用rAltmetric查询文献的Altmetric指标</title>
-      <link>https://shixiangwang.github.io/home/cn/how-to-use-altmetric/</link>
-      <pubDate>Sat, 28 Aug 2021 00:00:00 +0000</pubDate>
+      <title>使用Zotero和Scrivener进行配合写作</title>
+      <link>https://jiaduoli2000.github.io/cn/post/how-to-connected-zotero-scrivenet/</link>
+      <pubDate>Tue, 31 Aug 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://shixiangwang.github.io/home/cn/how-to-use-altmetric/</guid>
-      <description>如何使用rAltmetric查询文献的Altmetric指标? Altmetric是最近几年新兴的评价论文影响力的指标，我们可以利用Altme</description>
+      <guid>https://jiaduoli2000.github.io/cn/post/how-to-connected-zotero-scrivenet/</guid>
+      <description>前面我们了解了zotero 与 obsidian 配合提高阅读效率，可是我们阅读的目的大多数都是为了写作，所以我又介绍了一个写作神器Scrivener。如果说用</description>
+    </item>
+    
+    <item>
+      <title>如何推送本地内容到码云（Gitee）？</title>
+      <link>https://jiaduoli2000.github.io/cn/post/how-to-push-test-to-gitee/</link>
+      <pubDate>Tue, 31 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://jiaduoli2000.github.io/cn/post/how-to-push-test-to-gitee/</guid>
+      <description>无奈于github推送的速度太慢，或者干脆无法推送。似乎推送本地内容到码云Gitee是一个解决办法。为什么要推送到网络上，这里我是本着开源的</description>
     </item>
     
     <item>
       <title>R语言—支持向量机（SVM）</title>
-      <link>https://shixiangwang.github.io/home/cn/post/r-svm-support/</link>
+      <link>https://jiaduoli2000.github.io/cn/post/r-svm-support/</link>
       <pubDate>Fri, 27 Aug 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://shixiangwang.github.io/home/cn/post/r-svm-support/</guid>
+      <guid>https://jiaduoli2000.github.io/cn/post/r-svm-support/</guid>
       <description>今天，第一次尝试用R Markdown来写学习笔记，这是一个边学边记录的过程，今天的内容是支持向量机（Support Vector Machines），简称</description>
     </item>
     
     <item>
       <title>FydeOS折腾记录</title>
-      <link>https://shixiangwang.github.io/home/cn/post/fydeos/</link>
+      <link>https://jiaduoli2000.github.io/cn/post/fydeos/</link>
       <pubDate>Thu, 26 Aug 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://shixiangwang.github.io/home/cn/post/fydeos/</guid>
+      <guid>https://jiaduoli2000.github.io/cn/post/fydeos/</guid>
       <description>最近爱折腾的老毛病又犯了，看着家里那台龟速的旧笔记本，折腾之心再起。以前已经重装过N次系统，包括windows，也包括linux，都不太理想</description>
     </item>
     
     <item>
       <title>Mimics-气管肺的重建</title>
-      <link>https://shixiangwang.github.io/home/cn/post/mimics-lung-seg/</link>
+      <link>https://jiaduoli2000.github.io/cn/post/mimics-lung-seg/</link>
       <pubDate>Wed, 11 Aug 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://shixiangwang.github.io/home/cn/post/mimics-lung-seg/</guid>
+      <guid>https://jiaduoli2000.github.io/cn/post/mimics-lung-seg/</guid>
       <description>1. 导入数据 打开mimics 21.0, .img-container { text-align: center; display: block; } 选择New Project, 在弹出的对话框中选择数据，这里是肺CT示例-1， .img-container { text-align: center; display: block; } 数据导入完成并显示， .img-container {</description>
     </item>
     
     <item>
       <title>TCIA数据库获取影像DICM文件</title>
-      <link>https://shixiangwang.github.io/home/cn/post/tcia-dicm/</link>
+      <link>https://jiaduoli2000.github.io/cn/post/tcia-dicm/</link>
       <pubDate>Sat, 07 Aug 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://shixiangwang.github.io/home/cn/post/tcia-dicm/</guid>
+      <guid>https://jiaduoli2000.github.io/cn/post/tcia-dicm/</guid>
       <description>大家好，我是阿狸，这里是阿狸笔记，今天的内容是我自学Mimics软件的第二集。上一节，我学会了如何安装Mimics。软件安装好了之后，要进一</description>
     </item>
     
     <item>
       <title>Materialise Mimics-初识之安装</title>
-      <link>https://shixiangwang.github.io/home/cn/post/materialise-mimics-soft/</link>
+      <link>https://jiaduoli2000.github.io/cn/post/materialise-mimics-soft/</link>
       <pubDate>Tue, 03 Aug 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://shixiangwang.github.io/home/cn/post/materialise-mimics-soft/</guid>
+      <guid>https://jiaduoli2000.github.io/cn/post/materialise-mimics-soft/</guid>
       <description>Materialise Mimics 初识 Materialise Mimics，用于医学影像处理。CT和MRI的断层图像都能进行三维重建，输出为通用的三维格式，然后进行三维打印、科研、医疗、有限元</description>
     </item>
     
     <item>
       <title>用python将视频生成帧图</title>
-      <link>https://shixiangwang.github.io/home/cn/post/python-video-to-img/</link>
+      <link>https://jiaduoli2000.github.io/cn/post/python-video-to-img/</link>
       <pubDate>Sun, 01 Aug 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://shixiangwang.github.io/home/cn/post/python-video-to-img/</guid>
+      <guid>https://jiaduoli2000.github.io/cn/post/python-video-to-img/</guid>
       <description>用python将视频生成帧图 安装opencv-python 首先，打开Anaconda Prompt(Anaconda3), .img-container { text-align: center; display: block; } 输入命令：pip install opencv-pyth</description>
     </item>
     
     <item>
       <title>R语言-14-cox回归-列线图绘制</title>
-      <link>https://shixiangwang.github.io/home/cn/post/cox-nomogram/</link>
+      <link>https://jiaduoli2000.github.io/cn/post/cox-nomogram/</link>
       <pubDate>Thu, 29 Jul 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://shixiangwang.github.io/home/cn/post/cox-nomogram/</guid>
+      <guid>https://jiaduoli2000.github.io/cn/post/cox-nomogram/</guid>
       <description>前面的视频我们了解了关于生存分析的KM曲线和log-rank检验，Cox回归的多因素生存分析，以及如何评估Cox模型假设有效性。在建立了co</description>
     </item>
     
     <item>
       <title>R语言-Cox回归-评估Cox模型假设有效性</title>
-      <link>https://shixiangwang.github.io/home/cn/post/cox-mdole-asumpptions/</link>
+      <link>https://jiaduoli2000.github.io/cn/post/cox-mdole-asumpptions/</link>
       <pubDate>Thu, 29 Jul 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://shixiangwang.github.io/home/cn/post/cox-mdole-asumpptions/</guid>
+      <guid>https://jiaduoli2000.github.io/cn/post/cox-mdole-asumpptions/</guid>
       <description>Cox模型假设 之前，我们描述了分析生存数据的基本方法，以及处理几个因素影响生存过程的情况的Cox比例风险方法。 在这篇文章中，我们继续描述评估</description>
     </item>
     
     <item>
       <title>R语言-加权COX回归-列线图绘制</title>
-      <link>https://shixiangwang.github.io/home/cn/post/cox-svynom/</link>
+      <link>https://jiaduoli2000.github.io/cn/post/cox-svynom/</link>
       <pubDate>Thu, 29 Jul 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://shixiangwang.github.io/home/cn/post/cox-svynom/</guid>
+      <guid>https://jiaduoli2000.github.io/cn/post/cox-svynom/</guid>
       <description>前面的视频我们介绍了cox回归模型，今天的内容是绘制cox回归列线图。什么是列线图，来看看他的样子： .img-container { text-align: center; display: block; } 好像有点复杂，对了，列线图</description>
     </item>
     
     <item>
       <title>R语言-生存分析</title>
-      <link>https://shixiangwang.github.io/home/cn/post/survival-analysis/</link>
+      <link>https://jiaduoli2000.github.io/cn/post/survival-analysis/</link>
       <pubDate>Thu, 29 Jul 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://shixiangwang.github.io/home/cn/post/survival-analysis/</guid>
+      <guid>https://jiaduoli2000.github.io/cn/post/survival-analysis/</guid>
       <description>生存分析基础 生存分析对应于一组统计方法，用于调查感兴趣的事件发生所需的时间。 生存分析用于各种领域，例如： 癌症研究用于患者生存时间分析， 社会学</description>
     </item>
     
     <item>
       <title>效率工具-文献检索之Research Rabbit</title>
-      <link>https://shixiangwang.github.io/home/cn/post/research-rabbit/</link>
+      <link>https://jiaduoli2000.github.io/cn/post/research-rabbit/</link>
       <pubDate>Thu, 29 Jul 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://shixiangwang.github.io/home/cn/post/research-rabbit/</guid>
-      <description>大家好，我是阿狸，今天，我们来了解一下Research Rabbit（研究兔子）。一种新的文献检索及可视化工具，它使用 AI 帮助我们发现相关且有趣</description>
-    </item>
-    
-    <item>
-      <title>文献检索之Research Rabbit</title>
-      <link>https://shixiangwang.github.io/home/cn/2021-07-29-research-rabbit/</link>
-      <pubDate>Thu, 29 Jul 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://shixiangwang.github.io/home/cn/2021-07-29-research-rabbit/</guid>
+      <guid>https://jiaduoli2000.github.io/cn/post/research-rabbit/</guid>
       <description>大家好，我是阿狸，今天，我们来了解一下Research Rabbit（研究兔子）。一种新的文献检索及可视化工具，它使用 AI 帮助我们发现相关且有趣</description>
     </item>
     
     <item>
       <title>Blogdown&#43;Hugo&#43;Netlify搭建个人博客</title>
-      <link>https://shixiangwang.github.io/home/cn/post/r/</link>
+      <link>https://jiaduoli2000.github.io/cn/post/r/</link>
       <pubDate>Wed, 28 Jul 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://shixiangwang.github.io/home/cn/post/r/</guid>
+      <guid>https://jiaduoli2000.github.io/cn/post/r/</guid>
       <description>大家好，我是阿狸，这里是阿狸笔记。作为一个医学生，每每在网络上浏览到各路程序猿大神们自己搭建的个人博客，心中都无比羡慕。最近看到谢益辉、王诗</description>
     </item>
     
     <item>
       <title>R语言-bibliometrix包-文献可视化工具</title>
-      <link>https://shixiangwang.github.io/home/cn/post/r-bibliometrix/</link>
+      <link>https://jiaduoli2000.github.io/cn/post/r-bibliometrix/</link>
       <pubDate>Sun, 25 Jul 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://shixiangwang.github.io/home/cn/post/r-bibliometrix/</guid>
+      <guid>https://jiaduoli2000.github.io/cn/post/r-bibliometrix/</guid>
       <description>bibliometrix包安装与调用 bibliometrix，是一款R包，Bibliometix这款R包，是基于【文献计量学】开发的。通过文</description>
     </item>
     
     <item>
       <title>简历</title>
-      <link>https://shixiangwang.github.io/home/cn/cv-cn/shixiang/</link>
+      <link>https://jiaduoli2000.github.io/cn/cv-cn/shixiang/</link>
       <pubDate>Sun, 25 Jul 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://shixiangwang.github.io/home/cn/cv-cn/shixiang/</guid>
+      <guid>https://jiaduoli2000.github.io/cn/cv-cn/shixiang/</guid>
       <description>阿狸的Blog 地址：石家庄市长安区河北医科大学研究生院 个人邮箱：bettermost@yeah.net 个人网站：https://aliyis</description>
     </item>
     
     <item>
       <title>在Zettlr(Markdown 编辑器)中插入参考文献</title>
-      <link>https://shixiangwang.github.io/home/cn/post/zettlr-markdown/</link>
+      <link>https://jiaduoli2000.github.io/cn/post/zettlr-markdown/</link>
       <pubDate>Thu, 15 Jul 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://shixiangwang.github.io/home/cn/post/zettlr-markdown/</guid>
+      <guid>https://jiaduoli2000.github.io/cn/post/zettlr-markdown/</guid>
       <description>Zettlr，一种Markdown 编辑器，开源，是为非编码技术人员设计的，用作者的话说，是专门为社会科学、历史或政治学的学生打造的，因为作者</description>
     </item>
     
     <item>
       <title>zotero 与 obsidian 配合提高阅读效率</title>
-      <link>https://shixiangwang.github.io/home/cn/post/zotero-obsidian/</link>
+      <link>https://jiaduoli2000.github.io/cn/post/zotero-obsidian/</link>
       <pubDate>Fri, 25 Jun 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://shixiangwang.github.io/home/cn/post/zotero-obsidian/</guid>
+      <guid>https://jiaduoli2000.github.io/cn/post/zotero-obsidian/</guid>
       <description>Zotero是一款不错的文献管理工具，开源，免费，功能强大。作为医学生，我们可以用它来管理文献。 Obsidian是一款强大的笔记软件，开源，</description>
     </item>
     
     <item>
       <title>下载新版PubMed为xml格式文件并导入CiteSpace</title>
-      <link>https://shixiangwang.github.io/home/cn/post/citespace-pubmed/</link>
+      <link>https://jiaduoli2000.github.io/cn/post/citespace-pubmed/</link>
       <pubDate>Mon, 21 Jun 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://shixiangwang.github.io/home/cn/post/citespace-pubmed/</guid>
+      <guid>https://jiaduoli2000.github.io/cn/post/citespace-pubmed/</guid>
       <description>上一期我们学习了CiteSpace，也叫引文空间，是一个强大的文献可视化工具。作为一个医学生，我们经常要在PubMed来检索生物医学文献，本</description>
     </item>
     
     <item>
       <title>R语言-6-泊松回归实例</title>
-      <link>https://shixiangwang.github.io/home/cn/post/possion/</link>
+      <link>https://jiaduoli2000.github.io/cn/post/possion/</link>
       <pubDate>Sun, 06 Jun 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://shixiangwang.github.io/home/cn/post/possion/</guid>
+      <guid>https://jiaduoli2000.github.io/cn/post/possion/</guid>
       <description>1.模型简介 [[泊松分布]]的方差和均值相等。当响应变量观测的方差比依据泊松分布预测的方差大时，泊松 回归可能发生过度离势。由于处理计数型数据</description>
-    </item>
-    
-    <item>
-      <title>《机器学习》学习笔记</title>
-      <link>https://shixiangwang.github.io/home/cn/read/machine-learning-by-zhou/</link>
-      <pubDate>Mon, 21 Sep 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://shixiangwang.github.io/home/cn/read/machine-learning-by-zhou/</guid>
-      <description>模型评估与选择 评估方法 留出法（hold-out） 将数据集划分为两个互斥的集合，其中一个作为训练集，另一个作为测试集。 在训练集上训练出模型后，</description>
-    </item>
-    
-    <item>
-      <title>《程序员的数学》（一）</title>
-      <link>https://shixiangwang.github.io/home/cn/read/math-for-programmer-s1/</link>
-      <pubDate>Sun, 20 Sep 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://shixiangwang.github.io/home/cn/read/math-for-programmer-s1/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>《程序员的数学》（三）：线性代数</title>
-      <link>https://shixiangwang.github.io/home/cn/read/math-for-programmer-s3/</link>
-      <pubDate>Sun, 20 Sep 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://shixiangwang.github.io/home/cn/read/math-for-programmer-s3/</guid>
-      <description>用空间的语言表达向量、矩阵和行列式 向量： 字面意思：排成一列的数字。 实际意思：带有方向的线段、空间内的点。 矩阵： 字面意思：排成矩阵的数字。 实际</description>
-    </item>
-    
-    <item>
-      <title>《程序员的数学》（二）：概率统计</title>
-      <link>https://shixiangwang.github.io/home/cn/read/math-for-programmer-s2/</link>
-      <pubDate>Sun, 20 Sep 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://shixiangwang.github.io/home/cn/read/math-for-programmer-s2/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>《Mastering Go》第五章笔记</title>
-      <link>https://shixiangwang.github.io/home/cn/read/mastering-go-book-chapter-05/</link>
-      <pubDate>Wed, 26 Aug 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://shixiangwang.github.io/home/cn/read/mastering-go-book-chapter-05/</guid>
-      <description>Go 的一些数据结构（图、树、队列等）都由标准包 container 提供。 图和顶点 图G(V,E)是顶点V(或节点)的有限非空集合和边E的集合。图有两种主要类型:循</description>
-    </item>
-    
-    <item>
-      <title>《Mastering Go》第四章笔记</title>
-      <link>https://shixiangwang.github.io/home/cn/read/mastering-go-book-chapter-04/</link>
-      <pubDate>Wed, 26 Aug 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://shixiangwang.github.io/home/cn/read/mastering-go-book-chapter-04/</guid>
-      <description>Go 结构体 构建结构体： package main import &amp;#34;fmt&amp;#34; func main() { type XYZ struct { X int Y int Z int } var s1 XYZ fmt.Println(s1.Y, s1.Z) p1 := XYZ{23, 12, -2} p2 := XYZ{Z: 12, Y: 13} fmt.Println(p1) fmt.Println(p2) pSlice := [4]XYZ{} pSlice[2] = p1 pSlice[0] = p2 fmt.Println(pSlice) p2 = XYZ{1, 2, 3} fmt.Println(pSlice) } 运行： $ go run ./0036-structures.go</description>
-    </item>
-    
-    <item>
-      <title>《Mastering Go》第三章笔记</title>
-      <link>https://shixiangwang.github.io/home/cn/read/mastering-go-book-chapter-03/</link>
-      <pubDate>Wed, 12 Aug 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://shixiangwang.github.io/home/cn/read/mastering-go-book-chapter-03/</guid>
-      <description>Go 循环 for 循环 for i := 0; i &amp;lt; 100; i++ { } 可以使用 break 和 continue 关键字控制循环。 while 循环 for condition { } do...while 循环实现： for ok := true; ok; ok = anExpr { } range range 关键字可以更简单地处理元素迭</description>
-    </item>
-    
-    <item>
-      <title>《Mastering Go》第二章笔记</title>
-      <link>https://shixiangwang.github.io/home/cn/read/mastering-go-book-chapter-02/</link>
-      <pubDate>Sun, 09 Aug 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://shixiangwang.github.io/home/cn/read/mastering-go-book-chapter-02/</guid>
-      <description>GO 编译器 Go 在编译的过程中做了大量的工作。 go tool compile xx.go 生成目标文件。 go tool compile -pack xx.go 生成存档文件 go tool compile -race xx.go 用于检测 race condition。 go tool compile -S xx.go 会生成</description>
-    </item>
-    
-    <item>
-      <title>《Mastering Go》第一章笔记</title>
-      <link>https://shixiangwang.github.io/home/cn/read/mastering-go-book-chapter-01/</link>
-      <pubDate>Mon, 03 Aug 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://shixiangwang.github.io/home/cn/read/mastering-go-book-chapter-01/</guid>
-      <description>godoc 使用 go doc fmt.Printf go doc fmt # Open a Go doc server godoc -http=:8001 运行和编译 go 代码 package main import &amp;#34;fmt&amp;#34; func main() { fmt.Println(&amp;#34;This is a sample Go program!&amp;#34;) } 使用 go run filename 运行代码文件；使用 go buils filename 编译 go 代码形成可执行文件。 下</description>
-    </item>
-    
-    <item>
-      <title>创作草稿：遵循标准结构</title>
-      <link>https://shixiangwang.github.io/home/cn/read/sci-writing-composing-a-first-draft/</link>
-      <pubDate>Thu, 20 Jun 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://shixiangwang.github.io/home/cn/read/sci-writing-composing-a-first-draft/</guid>
-      <description>本文是《Successful scientific wrting》一书的阅读笔记之一。 大部分的学术文章都遵循相似的模式，即所谓的 IMRAD 格式——它是**Introduc</description>
     </item>
     
   </channel>

@@ -2,45 +2,27 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>writing on Blog Lee | 阿狸的Blog</title>
-    <link>https://shixiangwang.github.io/home/tags/writing/</link>
+    <link>https://jiaduoli2000.github.io/tags/writing/</link>
     <description>Recent content in writing on Blog Lee | 阿狸的Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 29 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://shixiangwang.github.io/home/tags/writing/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 29 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://jiaduoli2000.github.io/tags/writing/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>效率工具-文献检索之Research Rabbit</title>
-      <link>https://shixiangwang.github.io/home/cn/post/research-rabbit/</link>
+      <link>https://jiaduoli2000.github.io/cn/post/research-rabbit/</link>
       <pubDate>Thu, 29 Jul 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://shixiangwang.github.io/home/cn/post/research-rabbit/</guid>
-      <description>大家好，我是阿狸，今天，我们来了解一下Research Rabbit（研究兔子）。一种新的文献检索及可视化工具，它使用 AI 帮助我们发现相关且有趣</description>
-    </item>
-    
-    <item>
-      <title>文献检索之Research Rabbit</title>
-      <link>https://shixiangwang.github.io/home/cn/2021-07-29-research-rabbit/</link>
-      <pubDate>Thu, 29 Jul 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://shixiangwang.github.io/home/cn/2021-07-29-research-rabbit/</guid>
+      <guid>https://jiaduoli2000.github.io/cn/post/research-rabbit/</guid>
       <description>大家好，我是阿狸，今天，我们来了解一下Research Rabbit（研究兔子）。一种新的文献检索及可视化工具，它使用 AI 帮助我们发现相关且有趣</description>
     </item>
     
     <item>
       <title>Blogdown&#43;Hugo&#43;Netlify搭建个人博客</title>
-      <link>https://shixiangwang.github.io/home/cn/post/r/</link>
+      <link>https://jiaduoli2000.github.io/cn/post/r/</link>
       <pubDate>Wed, 28 Jul 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://shixiangwang.github.io/home/cn/post/r/</guid>
+      <guid>https://jiaduoli2000.github.io/cn/post/r/</guid>
       <description>大家好，我是阿狸，这里是阿狸笔记。作为一个医学生，每每在网络上浏览到各路程序猿大神们自己搭建的个人博客，心中都无比羡慕。最近看到谢益辉、王诗</description>
-    </item>
-    
-    <item>
-      <title>创作草稿：遵循标准结构</title>
-      <link>https://shixiangwang.github.io/home/cn/read/sci-writing-composing-a-first-draft/</link>
-      <pubDate>Thu, 20 Jun 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://shixiangwang.github.io/home/cn/read/sci-writing-composing-a-first-draft/</guid>
-      <description>本文是《Successful scientific wrting》一书的阅读笔记之一。 大部分的学术文章都遵循相似的模式，即所谓的 IMRAD 格式——它是**Introduc</description>
     </item>
     
   </channel>

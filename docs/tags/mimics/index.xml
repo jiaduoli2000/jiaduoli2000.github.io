@@ -2,35 +2,35 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>mimics on Blog Lee | 阿狸的Blog</title>
-    <link>https://shixiangwang.github.io/home/tags/mimics/</link>
+    <link>https://jiaduoli2000.github.io/tags/mimics/</link>
     <description>Recent content in mimics on Blog Lee | 阿狸的Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 11 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://shixiangwang.github.io/home/tags/mimics/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 11 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://jiaduoli2000.github.io/tags/mimics/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Mimics-气管肺的重建</title>
-      <link>https://shixiangwang.github.io/home/cn/post/mimics-lung-seg/</link>
+      <link>https://jiaduoli2000.github.io/cn/post/mimics-lung-seg/</link>
       <pubDate>Wed, 11 Aug 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://shixiangwang.github.io/home/cn/post/mimics-lung-seg/</guid>
+      <guid>https://jiaduoli2000.github.io/cn/post/mimics-lung-seg/</guid>
       <description>1. 导入数据 打开mimics 21.0, .img-container { text-align: center; display: block; } 选择New Project, 在弹出的对话框中选择数据，这里是肺CT示例-1， .img-container { text-align: center; display: block; } 数据导入完成并显示， .img-container {</description>
     </item>
     
     <item>
       <title>TCIA数据库获取影像DICM文件</title>
-      <link>https://shixiangwang.github.io/home/cn/post/tcia-dicm/</link>
+      <link>https://jiaduoli2000.github.io/cn/post/tcia-dicm/</link>
       <pubDate>Sat, 07 Aug 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://shixiangwang.github.io/home/cn/post/tcia-dicm/</guid>
+      <guid>https://jiaduoli2000.github.io/cn/post/tcia-dicm/</guid>
       <description>大家好，我是阿狸，这里是阿狸笔记，今天的内容是我自学Mimics软件的第二集。上一节，我学会了如何安装Mimics。软件安装好了之后，要进一</description>
     </item>
     
     <item>
       <title>Materialise Mimics-初识之安装</title>
-      <link>https://shixiangwang.github.io/home/cn/post/materialise-mimics-soft/</link>
+      <link>https://jiaduoli2000.github.io/cn/post/materialise-mimics-soft/</link>
       <pubDate>Tue, 03 Aug 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://shixiangwang.github.io/home/cn/post/materialise-mimics-soft/</guid>
+      <guid>https://jiaduoli2000.github.io/cn/post/materialise-mimics-soft/</guid>
       <description>Materialise Mimics 初识 Materialise Mimics，用于医学影像处理。CT和MRI的断层图像都能进行三维重建，输出为通用的三维格式，然后进行三维打印、科研、医疗、有限元</description>
     </item>
     

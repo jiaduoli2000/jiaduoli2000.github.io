@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>zettlr on Blog Lee | 阿狸的Blog</title>
-    <link>https://shixiangwang.github.io/home/tags/zettlr/</link>
+    <link>https://jiaduoli2000.github.io/tags/zettlr/</link>
     <description>Recent content in zettlr on Blog Lee | 阿狸的Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 15 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://shixiangwang.github.io/home/tags/zettlr/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 15 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://jiaduoli2000.github.io/tags/zettlr/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>在Zettlr(Markdown 编辑器)中插入参考文献</title>
-      <link>https://shixiangwang.github.io/home/cn/post/zettlr-markdown/</link>
+      <link>https://jiaduoli2000.github.io/cn/post/zettlr-markdown/</link>
       <pubDate>Thu, 15 Jul 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://shixiangwang.github.io/home/cn/post/zettlr-markdown/</guid>
+      <guid>https://jiaduoli2000.github.io/cn/post/zettlr-markdown/</guid>
       <description>Zettlr，一种Markdown 编辑器，开源，是为非编码技术人员设计的，用作者的话说，是专门为社会科学、历史或政治学的学生打造的，因为作者</description>
     </item>
     

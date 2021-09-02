@@ -1,32 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Gitee on Shixiang Wang | 王诗翔</title>
-    <link>/tags/gitee/</link>
-    <description>Recent content in Gitee on Shixiang Wang | 王诗翔</description>
+    <title>gitee on Blog Lee | 阿狸的Blog</title>
+    <link>https://jiaduoli2000.github.io/tags/gitee/</link>
+    <description>Recent content in gitee on Blog Lee | 阿狸的Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 27 Nov 2020 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="/tags/gitee/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Tue, 31 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://jiaduoli2000.github.io/tags/gitee/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>使用 wfun 加速 GitHub 包安装和仓库克隆</title>
-      <link>/cn/post/2020-11-27-wfun-intro/</link>
-      <pubDate>Fri, 27 Nov 2020 00:00:00 +0000</pubDate>
+      <title>如何推送本地内容到码云（Gitee）？</title>
+      <link>https://jiaduoli2000.github.io/cn/post/how-to-push-test-to-gitee/</link>
+      <pubDate>Tue, 31 Aug 2021 00:00:00 +0000</pubDate>
       
-      <guid>/cn/post/2020-11-27-wfun-intro/</guid>
-      <description>在国内下载 GitHub R 包或者克隆仓库经常失败，虽然在 Gitee 上设置镜像是一个不错的办法，但总是这么操作也挺麻烦了。今天分享一个解决的办法，就是使用我新写的</description>
-    </item>
-    
-    <item>
-      <title>PicGo &#43; Gitee 构建免费云图床</title>
-      <link>/cn/post/2020-08-10-build-cloud-pic-database-with-picgo-and-gitee/</link>
-      <pubDate>Mon, 10 Aug 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/cn/post/2020-08-10-build-cloud-pic-database-with-picgo-and-gitee/</guid>
-      <description>.img-container { text-align: center; display: block; } PicGo PicGo 下载链接：https://github.com/Molunerfinn/PicGo/releases/ 开源开发不易，不妨对</description>
+      <guid>https://jiaduoli2000.github.io/cn/post/how-to-push-test-to-gitee/</guid>
+      <description>无奈于github推送的速度太慢，或者干脆无法推送。似乎推送本地内容到码云Gitee是一个解决办法。为什么要推送到网络上，这里我是本着开源的</description>
     </item>
     
   </channel>
