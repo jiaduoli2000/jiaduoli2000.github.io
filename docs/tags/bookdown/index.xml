@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>bookdown on Blog Lee | 阿狸的Blog</title>
+    <link>https://jiaduoli2000.github.io/tags/bookdown/</link>
+    <description>Recent content in bookdown on Blog Lee | 阿狸的Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 02 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://jiaduoli2000.github.io/tags/bookdown/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Bookdown制作图书&#43;GiteePages展示</title>
+      <link>https://jiaduoli2000.github.io/cn/post/2021-09-02-test/</link>
+      <pubDate>Thu, 02 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://jiaduoli2000.github.io/cn/post/2021-09-02-test/</guid>
+      <description>在读书时常常看到一些纸质书的前言介绍里会提供图书的网页电子版本，这个表达有一些拗口，暂且这样叫吧。比如说，这一本《 用bookdown制作图书</description>
+    </item>
+    
+  </channel>
+</rss>
