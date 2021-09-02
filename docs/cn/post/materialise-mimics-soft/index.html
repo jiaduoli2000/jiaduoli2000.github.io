@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    
+    <link rel="stylesheet" href="../../../fonts/academicons-1.8.6/css/academicons.min.css"/>
+    <link rel="icon" type="image/png" sizes="32x32" href="../../../logo/bodhi.png"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    
+    
+    <title>Materialise Mimics-初识之安装 - 阿狸的Blog</title>
+    
+     
+    <meta property="og:title" content="Materialise Mimics-初识之安装 - Blog Lee | 阿狸的Blog">
+    
+
+    
+      
+    
+
+    
+
+    
+    
+
+    <link rel="stylesheet" href="../../../css/style.css" />
+    <link rel="stylesheet" href="../../../css/mystyle.css" /> 
+    <link rel="stylesheet" href="../../../css/fonts.css" />
+    
+<script async src="../../../js/load-typekit.js"></script>
+
+
+<link rel="stylesheet" href="../../../css/custom.css" />
+
+  </head>
+  
+  <body class="cn">
+    <header class="masthead">
+      
+
+<h1><a href="https://gitee.com/alingyisheng/tupian/raw/master/img/%E9%98%BF%E7%8B%B8%E5%A4%B4%E5%83%8F%201.png"><img src="../../../logo/ale.png" alt="阿狸的Blog" /></a></h1>
+<p align="right" style="margin-top:-50px;"><small>><i>上士闻道<br>勤而行之</i></small></p>
+
+
+
+
+      <nav class="menu">
+        <input id="menu-check" type="checkbox" />
+        <label id="menu-label" for="menu-check" class="unselectable">
+          <span class="icon close-icon">✕</span>
+          <span class="icon open-icon">☰</span>
+          <span class="text">Menu</span>
+        </label>
+        <ul>
+        
+        
+        <li><a href="../../../">首页</a></li>
+        
+        <li><a href="../../../cn/about/">关于</a></li>
+        
+        <li><a href="../../../cn/post/">博客</a></li>
+        
+        <li><a href="../../../cn/cv-cn/shixiang">简历</a></li>
+        
+        <li><a href="https://gitee.com/alingyisheng/tupian/raw/master/img/%E9%98%BF%E7%8B%B8%E7%9A%84Blog-%E4%BA%8C%E7%BB%B4%E7%A0%81.jpg">公众号</a></li>
+        
+        <li><a href="https://www.zhihu.com/people/aliyisheng">知乎</a></li>
+        
+        
+
+<li class="menu-extra"></li>
+
+
+
+<li><a href="https://github.com/jiaduoli2000/home/edit/master/content/cn%5cpost%5c2021-08-03-materialise-mimics-soft%5cindex.md" target="_blank">编辑</a></li>
+
+
+<li><a href="../../../cn/index.xml" type="application/rss+xml" title="RSS feed">订阅</a></li>
+
+<li><a href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="Attribution-NonCommercial-ShareAlike 4.0 International">版权</a></li>
+
+
+        </ul>
+      </nav>
+    </header>
+
+    <article class="main">
+      <header class="title">
+        
+
+<h1>Materialise Mimics-初识之安装</h1>
+
+
+
+<h3>阿狸的Blog &middot 
+2021-08-03</h3> 
+
+
+<p style="text-align:right;">
+  分类:
+  
+    <a href="https://shixiangwang.github.io/home/categories/%E6%95%88%E7%8E%87%E5%B7%A5%E5%85%B7">效率工具</a> &nbsp
+  
+  <br>
+  标签:
+  
+    <a href="https://shixiangwang.github.io/home/tags/mimics">mimics</a> &nbsp
+  
+</p>
+
+
+
+   
+  
+
+
+      </header>
+
+
+<h1 id="materialise-mimics">Materialise Mimics</h1>
+<h2 id="初识">初识</h2>
+<p><a href="https://www.materialise.com/zh-hans/medical/software/mimics-innovation-suite/products-services/mimics">Materialise Mimics</a>，用于医学影像处理。CT和MRI的断层图像都能进行三维重建，输出为通用的三维格式，然后进行三维打印、科研、医疗、有限元分析等应用。</p>
+<p>软件功能：</p>
+<ul>
+<li>导入DICOM，JPEG，TIFF，BMP，X射线或原始图像数据</li>
+<li>创建3D模型</li>
+<li>执行解剖分析</li>
+<li>几乎模拟手术导出的用于3D分析，FEA网格划分，设计或3D打印的3D模型</li>
+<li>使用分析原理促进复杂的解剖学测量</li>
+<li>评估肿瘤的大小或肿瘤的复杂性</li>
+<li>调查并跟踪手术的结果</li>
+<li>预测用于手术的板和螺钉的正确尺寸</li>
+<li>检查软骨的厚度</li>
+<li>测量和分析进一步统计分析</li>
+</ul>
+<h2 id="安装">安装</h2>
+<h3 id="1-安装过程">1. 安装过程</h3>
+<p>官网提供机构注册，申请试用1个月，对于大多数爱好者，都无法申请。所以，为了学习，只能在某宝想些别的办法，这个就不具体说了。<a href="https://pan.baidu.com/s/1CNL16JOOo2WXYYJda_-VtQ">百度分享链接</a> <a href="bfvy">提取码</a>。按照压缩包中的安装方法进行安装就好了。
+<style>
+  .img-container {
+    text-align: center;
+    display: block;
+  }
+</style>
+
+  <img src="https://gitee.com/alingyisheng/tupian/raw/master/img/20210803131430.png" alt="20210803131430">
+  </span>
+
+有条件的化，还是最好支持正版，一般个人也是买不起。这里仅作学习交流用。由于目前这个版本较低，有些功能可能受到限制。解压到本地文件夹：
+<style>
+  .img-container {
+    text-align: center;
+    display: block;
+  }
+</style>
+
+  <img src="https://gitee.com/alingyisheng/tupian/raw/master/img/20210803132051.png" alt="20210803132051">
+  </span>
+
+来看看文件夹中包含的内容:
+<style>
+  .img-container {
+    text-align: center;
+    display: block;
+  }
+</style>
+
+  <img src="https://gitee.com/alingyisheng/tupian/raw/master/img/20210803132321.png" alt="20210803132321">
+  </span>
+
+我的电脑是64位，Windows10操作系统，以此为例进行安装。首先，打开文件夹<code>64位</code>，
+<style>
+  .img-container {
+    text-align: center;
+    display: block;
+  }
+</style>
+
+  <img src="https://gitee.com/alingyisheng/tupian/raw/master/img/20210803132822.png" alt="20210803132822">
+  </span>
+。
+选择MIS的版本，<code>Medical</code>或<code>Research</code>，双击安装。这里选择<code>Medical</code>。下面开始提取文件（过程较慢）：
+<style>
+  .img-container {
+    text-align: center;
+    display: block;
+  }
+</style>
+
+  <img src="https://gitee.com/alingyisheng/tupian/raw/master/img/20210803133208.png" alt="20210803133208">
+  </span>
+
+提取完成之后会弹出安装界面，点击<code>Next</code>，方框中划<code>√</code>，点击<code>Next</code>,
+<style>
+  .img-container {
+    text-align: center;
+    display: block;
+  }
+</style>
+
+  <img src="https://gitee.com/alingyisheng/tupian/raw/master/img/20210803133504.png" alt="20210803133504">
+  </span>
+
+点击<code>Next</code>, 这里<code>CHoose location</code>选择了默认的<code>Europe - Africa</code>
+<style>
+  .img-container {
+    text-align: center;
+    display: block;
+  }
+</style>
+
+  <img src="https://gitee.com/alingyisheng/tupian/raw/master/img/20210803133730.png" alt="20210803133730">
+  </span>
+
+这里安装类型选择<code>Complete</code>, 存储位置选择：<code>E:\mimics\</code>,点击<code>Next</code>,点击<code>Next</code>,点击<code>Install</code>。
+<style>
+  .img-container {
+    text-align: center;
+    display: block;
+  }
+</style>
+
+  <img src="https://gitee.com/alingyisheng/tupian/raw/master/img/20210803134015.png" alt="20210803134015">
+  </span>
+
+正在安装，这个过程比较慢，大概10分钟时间，
+<style>
+  .img-container {
+    text-align: center;
+    display: block;
+  }
+</style>
+
+  <img src="https://gitee.com/alingyisheng/tupian/raw/master/img/20210803134406.png" alt="20210803134406">
+  </span>
+
+点击<code>finish</code>完成安装。
+<style>
+  .img-container {
+    text-align: center;
+    display: block;
+  }
+</style>
+
+  <img src="https://gitee.com/alingyisheng/tupian/raw/master/img/20210803135545.png" alt="20210803135545">
+  </span>
+
+查看桌面，可以看到下面两个快捷方式：
+<style>
+  .img-container {
+    text-align: center;
+    display: block;
+  }
+</style>
+
+  <img src="https://gitee.com/alingyisheng/tupian/raw/master/img/20210803135707.png" alt="20210803135707">
+  </span>
+
+安装完毕后，进入刚才的安装路径，
+<style>
+  .img-container {
+    text-align: center;
+    display: block;
+  }
+</style>
+
+  <img src="https://gitee.com/alingyisheng/tupian/raw/master/img/20210803140113.png" alt="20210803140113">
+  </span>
+
+如果发现里面没有MatConvert这个文件夹，检查一下C:\Program Files\Materialise（如果存在这个文件夹）里面有没有
+<style>
+  .img-container {
+    text-align: center;
+    display: block;
+  }
+</style>
+
+  <img src="https://gitee.com/alingyisheng/tupian/raw/master/img/20210803140337.png" alt="20210803140337">
+  </span>
+
+如果两个地方都找不到MatConvert，再双击对应的MatConvert_xXX.msi安装，自动安装到C:\Program Files\Materialise 之中，然后最好重启一下计算机</p>
+<h3 id="2破解过程">2.破解过程</h3>
+<p>到cgp_mis17文件夹内根据自己安装的版本选择32位还是64位，我这里选择64位：
+<style>
+  .img-container {
+    text-align: center;
+    display: block;
+  }
+</style>
+
+  <img src="https://gitee.com/alingyisheng/tupian/raw/master/img/20210803140555.png" alt="20210803140555">
+  </span>
+
+根据对应文件夹内的instruction.txt进行破解：
+<style>
+  .img-container {
+    text-align: center;
+    display: block;
+  }
+</style>
+
+  <img src="https://gitee.com/alingyisheng/tupian/raw/master/img/20210803151411.png" alt="20210803151411">
+  </span>
+
+将<code>3-matic.research.9.0.0.231.xXX-patch.exe</code>复制到3-matic的安装目录中，
+<style>
+  .img-container {
+    text-align: center;
+    display: block;
+  }
+</style>
+
+  <img src="https://gitee.com/alingyisheng/tupian/raw/master/img/20210803151702.png" alt="20210803151702">
+  </span>
+
+双击运行，（如果安装目录在C盘内，并且系统为Win7/8以上，需右键“以管理员身份运行”，下一条同理）
+<style>
+  .img-container {
+    text-align: center;
+    display: block;
+  }
+</style>
+
+  <img src="https://gitee.com/alingyisheng/tupian/raw/master/img/20210803151845.png" alt="20210803151845">
+  </span>
+
+点击<code>patch</code>,
+<style>
+  .img-container {
+    text-align: center;
+    display: block;
+  }
+</style>
+
+  <img src="https://gitee.com/alingyisheng/tupian/raw/master/img/20210803152205.png" alt="20210803152205">
+  </span>
+
+将<code>materialize.matconvert.7.0(xXX)-patch.exe</code>复制到<code>MatConvert</code>的安装目录中，
+<style>
+  .img-container {
+    text-align: center;
+    display: block;
+  }
+</style>
+
+  <img src="https://gitee.com/alingyisheng/tupian/raw/master/img/20210803152527.png" alt="20210803152527">
+  </span>
+
+双击运行，点击<code>patch</code>,
+<style>
+  .img-container {
+    text-align: center;
+    display: block;
+  }
+</style>
+
+  <img src="https://gitee.com/alingyisheng/tupian/raw/master/img/20210803152527.png" alt="20210803152527">
+  </span>
+
+至此，<code>3-matic</code>和<code>MatConvert</code>破解激活完毕。</p>
+<h3 id="3启动过程">3.启动过程</h3>
+<p><code>Mimics17_start_xXX_(XX).exe</code>为<code>MIMICS</code>的启动器，每次需用它才能启动<code>MIMICS</code>。
+<style>
+  .img-container {
+    text-align: center;
+    display: block;
+  }
+</style>
+
+  <img src="https://gitee.com/alingyisheng/tupian/raw/master/img/20210803153231.png" alt="20210803153231">
+  </span>
+
+将三个启动器复制到MIMICS的安装目录中，
+<style>
+  .img-container {
+    text-align: center;
+    display: block;
+  }
+</style>
+
+  <img src="https://gitee.com/alingyisheng/tupian/raw/master/img/20210803153548.png" alt="20210803153548">
+  </span>
+
+按照括号内数字从小到大，逐一运行看看哪个能成功启动<code>MIMICS</code>,如果系统配置比较高，可能<code>50</code>就能够启动。我的选择<code>50</code>好像不行。
+<style>
+  .img-container {
+    text-align: center;
+    display: block;
+  }
+</style>
+
+  <img src="https://gitee.com/alingyisheng/tupian/raw/master/img/20210803154730.png" alt="20210803154730">
+  </span>
+
+启动不了的话（会弹出一个CodeMeter之类的错误窗口），再试试150的启动器，看看能不能稳定启动，</p>
+<p><style>
+  .img-container {
+    text-align: center;
+    display: block;
+  }
+</style>
+
+  <img src="https://gitee.com/alingyisheng/tupian/raw/master/img/20210803154929.png" alt="20210803154929">
+  </span>
+</p>
+<p>这里我的可以了，打开后的界面是这样的：</p>
+<p><style>
+  .img-container {
+    text-align: center;
+    display: block;
+  }
+</style>
+
+  <img src="https://gitee.com/alingyisheng/tupian/raw/master/img/20210803155238.png" alt="20210803155238">
+  </span>
+</p>
+<p>下面说明书的内容我就看不懂了，但还是记录下来。再不行就试试255的。还不行的话……呃这系统配置略低了吧……自己找个十六进制编辑器比较一下这几个文件不同的地方（附带的<code>txt</code>文件里也可以找到），有个位置就是修改这个值的，目测是<code>32位int，little endian</code>，就这样选出一个能稳定启动MIMICS的启动器保留下来，删掉其他的。另外，桌面快捷方式似乎修改不了。</p>
+
+
+  <footer>
+  
+<nav class="post-nav">
+  <span class="nav-prev">&larr; <a href="../../../cn/post/python-video-to-img/">用python将视频生成帧图</a></span>
+  <span class="nav-next"><a href="../../../cn/post/tcia-dicm/">TCIA数据库获取影像DICM文件</a> &rarr;</span>
+</nav>
+<script type="text/javascript">
+document.addEventListener('keyup', function(e) {
+  if (e.target.nodeName.toUpperCase() != 'BODY') return;
+  var url = false;
+  if (e.which == 37) {  
+    
+    url = '\/cn\/post\/python-video-to-img\/';
+    
+  } else if (e.which == 39) {  
+    
+    url = '\/cn\/post\/tcia-dicm\/';
+    
+  }
+  if (url) window.location = url;
+});
+</script>
+
+
+
+
+
+<div id="gitalk-container"></div>
+<link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+<script src="https://cdn.bootcss.com/blueimp-md5/2.10.0/js/md5.js"></script>
+<script>
+  const gitalk = new Gitalk({
+    clientID: '7e6bbc8ded3722b80669',
+    clientSecret: '29d16bd7fe99b0bb6a9d0be33755c9d6d2a8a9dc',
+    repo: 'home',
+    owner: 'jiaduoli2000',
+    admin: ['jiaduoli2000'],
+    id: md5(window.location.pathname), 
+    distractionFreeMode: false 
+  });
+  (function() {
+    if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+      document.getElementById('gitalk-container').innerHTML = 'Gitalk comments not available by default when the website is previewed locally.';
+      return;
+    }
+    gitalk.render('gitalk-container');
+  })();
+</script>
+
+
+
+
+
+<script async src="../../../js/fix-toc.js"></script>
+
+<script async src="../../../js/center-img.js"></script>
+
+<script async src="../../../js/right-quote.js"></script>
+
+<script async src="../../../js/no-highlight.js"></script>
+
+<script async src="../../../js/fix-footnote.js"></script>
+
+<script async src="../../../js/math-code.js"></script>
+
+<script async src="../../../js/external-link.js"></script>
+
+<script async src="../../../js/alt-title.js"></script>
+
+<script async src="../../../js/header-link.js"></script>
+
+
+<script src="//yihui.org/js/math-code.js"></script>
+<script async src="//cdn.bootcss.com/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+<script async src="//yihui.org/js/center-img.js"></script>
+
+  
+
+
+  
+  
+  
+
+  <div class="copyright"><a href="mailto:bettermost@yeah.net"><i class='far fa-envelope fa-1x'></i></a> · <a href="https://github.com/jiaduoli2000"><i class='fab fa-github fa-1x'></i></a> · <a href="https://scholar.google.com/citations?view_op=list_works&amp;hl=zh-CN&amp;user=TC7LswQAAAAJ=zh-CN"><i class='ai ai-google-scholar ai-1x'></i></a> <br> 本站由 <a href="https://gohugo.io">Hugo</a> 和 <a href="https://bookdown.org/yihui/blogdown/">Blogdown</a> 强力驱动 © <a href="../../../">阿狸的Blog</a> 2021 - 2023 </div>
+  
+  
+
+  <script type="text/javascript" src="//rf.revolvermaps.com/0/0/6.js?i=56h9es09xn7&amp;m=6&amp;c=ff0000&amp;cr1=ffffff&amp;f=arial&amp;l=1" async="async"></script>
+  </footer>
+  </article>
+  
+  </body>
+</html>
+

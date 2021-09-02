@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>citspace on Blog Lee | 阿狸的Blog</title>
+    <link>https://shixiangwang.github.io/home/tags/citspace/</link>
+    <description>Recent content in citspace on Blog Lee | 阿狸的Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 25 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://shixiangwang.github.io/home/tags/citspace/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>R语言-bibliometrix包-文献可视化工具</title>
+      <link>https://shixiangwang.github.io/home/cn/post/r-bibliometrix/</link>
+      <pubDate>Sun, 25 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://shixiangwang.github.io/home/cn/post/r-bibliometrix/</guid>
+      <description>bibliometrix包安装与调用 bibliometrix，是一款R包，Bibliometix这款R包，是基于【文献计量学】开发的。通过文</description>
+    </item>
+    
+    <item>
+      <title>下载新版PubMed为xml格式文件并导入CiteSpace</title>
+      <link>https://shixiangwang.github.io/home/cn/post/citespace-pubmed/</link>
+      <pubDate>Mon, 21 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://shixiangwang.github.io/home/cn/post/citespace-pubmed/</guid>
+      <description>上一期我们学习了CiteSpace，也叫引文空间，是一个强大的文献可视化工具。作为一个医学生，我们经常要在PubMed来检索生物医学文献，本</description>
+    </item>
+    
+  </channel>
+</rss>

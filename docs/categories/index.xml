@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on Blog Lee | 阿狸的Blog</title>
+    <link>https://shixiangwang.github.io/home/categories/</link>
+    <description>Recent content in Categories on Blog Lee | 阿狸的Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 27 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://shixiangwang.github.io/home/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>r</title>
+      <link>https://shixiangwang.github.io/home/categories/r/</link>
+      <pubDate>Fri, 27 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://shixiangwang.github.io/home/categories/r/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>效率工具</title>
+      <link>https://shixiangwang.github.io/home/categories/%E6%95%88%E7%8E%87%E5%B7%A5%E5%85%B7/</link>
+      <pubDate>Thu, 26 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://shixiangwang.github.io/home/categories/%E6%95%88%E7%8E%87%E5%B7%A5%E5%85%B7/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>read</title>
+      <link>https://shixiangwang.github.io/home/categories/read/</link>
+      <pubDate>Thu, 29 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://shixiangwang.github.io/home/categories/read/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ml</title>
+      <link>https://shixiangwang.github.io/home/categories/ml/</link>
+      <pubDate>Mon, 21 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://shixiangwang.github.io/home/categories/ml/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>golang</title>
+      <link>https://shixiangwang.github.io/home/categories/golang/</link>
+      <pubDate>Wed, 26 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://shixiangwang.github.io/home/categories/golang/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

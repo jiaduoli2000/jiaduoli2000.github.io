@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>config on Shixiang Wang | 王诗翔</title>
+    <link>/categories/config/</link>
+    <description>Recent content in config on Shixiang Wang | 王诗翔</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 20 Jan 2021 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/categories/config/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>RStudio v1.4 正式发布，有哪些新特性？</title>
+      <link>/cn/post/2021-01-20-rstudio-v1_4/</link>
+      <pubDate>Wed, 20 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/cn/post/2021-01-20-rstudio-v1_4/</guid>
+      <description>RStudio 团队昨天正式发布了新的版本 v1.4。 本次更新引入了非常多新的特性： 可视化 Markdown 编辑器支持。A visual markdown editor that provides improved productivity for composing longer-form articles and analyses with R Markdown. 新的 Python 支持能力。 New</description>
+    </item>
+    
+    <item>
+      <title>3 步免费使用 Jetbrains 产品</title>
+      <link>/cn/post/2021-01-14-use-jetbrains/</link>
+      <pubDate>Thu, 14 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/cn/post/2021-01-14-use-jetbrains/</guid>
+      <description>下载任意的 JB 产品：https://www.jetbrains.com/ 下载 https://gitee.com/ShixiangWang/ide-eval-resetter 重置插件更新 根据文章 https://zhile.io/2020/11/18/jetbrains-eval-reset.html 进行配置</description>
+    </item>
+    
+    <item>
+      <title>MacOS 置顶窗口：MacForge 和 AfloatX</title>
+      <link>/cn/post/2021-01-02-use-macforge-and-afloatx/</link>
+      <pubDate>Sat, 02 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/cn/post/2021-01-02-use-macforge-and-afloatx/</guid>
+      <description>MacOS 本身不支持保持窗口前置，需要第三方插件实现。搜了一下有 Afloat 可以，但最近的更新在 17 年左右。后面发现有个 AfloatX，跟 MacForge 搭配使用比较好。 参考</description>
+    </item>
+    
+    <item>
+      <title>使用 youtube-dl 下载视频</title>
+      <link>/cn/post/2020-12-23-use-youtube-download/</link>
+      <pubDate>Wed, 23 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/cn/post/2020-12-23-use-youtube-download/</guid>
+      <description>使用的工具项目地址：https://github.com/ytdl-org/youtube-dl 安装： sudo curl -L https://yt-dl.org/downloads/latest/youtube-dl -o /usr/local/bin/youtube-dl sudo chmod a+rx /usr/local/bin/youtube-dl 简单下载就是命令后</description>
+    </item>
+    
+    <item>
+      <title>使用 Git 存储大文件</title>
+      <link>/cn/post/2020-12-07-git-for-large-files/</link>
+      <pubDate>Mon, 07 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/cn/post/2020-12-07-git-for-large-files/</guid>
+      <description>如果你是一个 gitter，你可能会遇到我今天遇到的问题。 git push 文件太大报警告 当在 Git 仓库中存储大的二进制文件时（&amp;gt;50MB），比如 R 里面的</description>
+    </item>
+    
+    <item>
+      <title>安装 Rmpi 包</title>
+      <link>/cn/post/2020-11-23-install-rmpi/</link>
+      <pubDate>Mon, 23 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/cn/post/2020-11-23-install-rmpi/</guid>
+      <description>下载包 wget -c https://cran.r-project.org/src/contrib/Rmpi_0.6-9.tar.gz 此处可以换不同的源，最新版本也可能不同。 CentOS 下安装 # 先安装依赖库 sudo yum install openmpi-devel # 安装 # ld -lmpi --verbose R CMD INSTALL Rmpi_0.6-9.tar.gz --configure-args=&amp;#34;--with-Rmpi-include=/usr/include/openmpi-x86_64/ --with-Rmpi-libpath=/usr/lib64/openmpi/lib --with-Rmpi-type=OPENMPI&amp;#34; 如果存在编译问题，查看 http://fisher.stats.uwo.ca/faculty/yu/Rmpi/ 文档看</description>
+    </item>
+    
+    <item>
+      <title>关于 GLIBC 版本笔记</title>
+      <link>/cn/post/2020-09-28-note-about-glibc/</link>
+      <pubDate>Mon, 28 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/cn/post/2020-09-28-note-about-glibc/</guid>
+      <description>在服务器上测试代码时发现 glibc 版本不够，但我又没有 root 权限。。。。 好像常见的就是找不到 2.14 版本，centos 默认使用的 2.12，这可以通过以下方式检</description>
+    </item>
+    
+    <item>
+      <title>Commit 规范学习</title>
+      <link>/cn/post/2020-08-31-commit-standards/</link>
+      <pubDate>Mon, 31 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/cn/post/2020-08-31-commit-standards/</guid>
+      <description>参考： https://www.conventionalcommits.org/zh-hans/v1.0.0-beta.4/ https://www.ruanyifeng.com/blog/2016/01/commit_message_change_log.html 配置：https://github.com/commitizen/cz-cli</description>
+    </item>
+    
+    <item>
+      <title>Rprofile：R 全局设置</title>
+      <link>/cn/post/2020-08-13-set-your-rprofile/</link>
+      <pubDate>Thu, 13 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/cn/post/2020-08-13-set-your-rprofile/</guid>
+      <description>存储在 ~/.Rprofile 中的内容是一个 R 脚本，它会在 R 启动时自动运行，所以可以作为全局的配置使用。 根据我的 R 使用经验，结合 Y 叔和 Yihui 提供的一些便利函数，我构建</description>
+    </item>
+    
+    <item>
+      <title>Hugo 设置 markdown 图片的标题</title>
+      <link>/cn/post/2020-08-10-hugo-set-fig-caption/</link>
+      <pubDate>Mon, 10 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/cn/post/2020-08-10-hugo-set-fig-caption/</guid>
+      <description>添加文件 layouts/_default/_markup/render-image.html，hugo 会在这里寻找模板。 写入下面模板代码： {{</description>
+    </item>
+    
+    <item>
+      <title>PicGo &#43; Gitee 构建免费云图床</title>
+      <link>/cn/post/2020-08-10-build-cloud-pic-database-with-picgo-and-gitee/</link>
+      <pubDate>Mon, 10 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/cn/post/2020-08-10-build-cloud-pic-database-with-picgo-and-gitee/</guid>
+      <description>.img-container { text-align: center; display: block; } PicGo PicGo 下载链接：https://github.com/Molunerfinn/PicGo/releases/ 开源开发不易，不妨对</description>
+    </item>
+    
+    <item>
+      <title>使用 Cascadia Code 字体</title>
+      <link>/cn/post/2019-10-18-use-cascadia-code-font/</link>
+      <pubDate>Fri, 18 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/cn/post/2019-10-18-use-cascadia-code-font/</guid>
+      <description>最近微软为 Windows Terminal 推出了具有连字特性的字体 Cascadia Code，在试用后发现确实很不错，下图是字体效果，这里结合官方的 README 介绍一下。 .img-container { text-align: center; display: block; } .img-container { text-align: center; display:</description>
+    </item>
+    
+  </channel>
+</rss>
