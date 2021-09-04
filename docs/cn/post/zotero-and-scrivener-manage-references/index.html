@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    
+    <link rel="stylesheet" href="../../../fonts/academicons-1.8.6/css/academicons.min.css"/>
+    <link rel="icon" type="image/png" sizes="32x32" href="../../../logo/bodhi.png"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    
+    
+    <title>Zotero和Scrivener管理参考文献 - 阿狸的Blog</title>
+    
+     
+    <meta property="og:title" content="Zotero和Scrivener管理参考文献 - Blog Lee | 阿狸的Blog">
+    
+
+    
+      
+    
+
+    
+
+    
+    
+
+    <link rel="stylesheet" href="../../../css/style.css" />
+    <link rel="stylesheet" href="../../../css/mystyle.css" /> 
+    <link rel="stylesheet" href="../../../css/fonts.css" />
+    
+<script async src="../../../js/load-typekit.js"></script>
+
+
+<link rel="stylesheet" href="../../../css/custom.css" />
+
+  </head>
+  
+  <body class="cn">
+    <header class="masthead">
+      
+
+<h1><a href="https://gitee.com/alingyisheng/tupian/raw/master/img/%E9%98%BF%E7%8B%B8%E5%A4%B4%E5%83%8F%201.png"><img src="../../../logo/ale.png" alt="阿狸的Blog" /></a></h1>
+<p align="right" style="margin-top:-50px;"><small>><i>上士闻道<br>勤而行之</i></small></p>
+
+
+
+
+      <nav class="menu">
+        <input id="menu-check" type="checkbox" />
+        <label id="menu-label" for="menu-check" class="unselectable">
+          <span class="icon close-icon">✕</span>
+          <span class="icon open-icon">☰</span>
+          <span class="text">Menu</span>
+        </label>
+        <ul>
+        
+        
+        <li><a href="../../../">首页</a></li>
+        
+        <li><a href="../../../cn/about/">关于</a></li>
+        
+        <li><a href="../../../cn/post/">博客</a></li>
+        
+        <li><a href="../../../cn/cv-cn/shixiang">简历</a></li>
+        
+        <li><a href="https://gitee.com/alingyisheng/tupian/raw/master/img/%E9%98%BF%E7%8B%B8%E7%9A%84Blog-%E4%BA%8C%E7%BB%B4%E7%A0%81.jpg">公众号</a></li>
+        
+        <li><a href="https://www.zhihu.com/people/aliyisheng">知乎</a></li>
+        
+        
+
+<li class="menu-extra"></li>
+
+
+
+<li><a href="https://github.com/jiaduoli2000/home/edit/master/content/cn%5cpost%5c2021-09-04-zotero-and-scrivener-manage-references%5cindex.md" target="_blank">编辑</a></li>
+
+
+<li><a href="../../../cn/index.xml" type="application/rss+xml" title="RSS feed">订阅</a></li>
+
+<li><a href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="Attribution-NonCommercial-ShareAlike 4.0 International">版权</a></li>
+
+
+        </ul>
+      </nav>
+    </header>
+
+    <article class="main">
+      <header class="title">
+        
+
+<h1>Zotero和Scrivener管理参考文献</h1>
+
+
+
+<h3>阿狸的Blog &middot 
+2021-09-04</h3> 
+
+
+<p style="text-align:right;">
+  分类:
+  
+    <a href="https://jiaduoli2000.github.io/categories/r">r</a> &nbsp
+  
+  <br>
+  标签:
+  
+    <a href="https://jiaduoli2000.github.io/tags/scrivener">scrivener</a> &nbsp
+  
+</p>
+
+
+
+   
+  
+
+
+      </header>
+
+
+<p>这是一次糟糕的折腾过程，踩了很多坑，丢了很多文件，很沮丧。也明白了一些道理，有些坑，也许只有你自己会遇到。你遇到了，是因为你很久之前做的选择。那就记录一下这个过程。有人说，成功很美，说的很对。那如果失败了呢，还美吗，不美了，但可能会收获更多。</p>
+<p>在使用Zotero的过程中，为了追求功能的极致或者说就是为了新鲜，我试用了zotero beta， beta版本自带一个内置的<code>pdf阅读器</code>，界面设计很优美的，笔记功能也是很不错的，但是和其他插件配合起来还存在缺陷。试用之后，一直在用zotero beta这个版本，当然没有用继续用它的<code>pdf阅读器</code>功能。</p>
+<p>另外，为了实现远程同步，我尝试过一些方法。zotero官方建议使用<code>登陆账号</code>来进行同步，不过容量有限，只有300MB，超过的话，需要购买，下面这个价格表对于普通用户来说是接受不了的，当然也有人介绍同步到<code>坚果云</code>的方法，我也试用过，坚果云也对免费用户上传和下载的流量进行了限制。所以最终，我选择了一种官方不建议的方法，我用<code>群晖NAS</code>来同步我的台式机和笔记本中zotero内容，一直以来，虽然间断会报错，但还算能用。采用这种方法，不用登陆zotero账号，也就是不开启云服务。</p>
+<p><style>
+  .img-container {
+    text-align: center;
+    display: block;
+  }
+</style>
+
+  <img src="https://gitee.com/alingyisheng/tupian/raw/master/img/20210904105320.png" alt="20210904105320">
+  </span>
+</p>
+<p>就是在<code>zotero beta+NAS同步</code>的前提下，我今天掉进了一个大坑。掉坑的结果“<code>丢了</code>”很多文件，不，是全部文件。为什么要加引号，因为这些文献其实并没有丢失，还在<code>storage</code>这个文件夹里。只不过zotero和storage之间的联系不见了。</p>
+<p><style>
+  .img-container {
+    text-align: center;
+    display: block;
+  }
+</style>
+
+  <img src="https://gitee.com/alingyisheng/tupian/raw/master/img/20210904110602.png" alt="20210904110602">
+  </span>
+</p>
+<p>好吧，我的zotero又回到了它刚出生时的样子，没有插件，没有文献，没有分类文件夹，没有标签，哈哈，这才是真实的世界，走一段路，就回归一次原点。会悔恨么，会为自己瞎折腾自责么，没有必要，“大不了从头再来”。耳边又听见朋友那句“电脑就是用来玩的，光看个片叫玩电脑么？”。软件也一样。别的呢？</p>
+<p><style>
+  .img-container {
+    text-align: center;
+    display: block;
+  }
+</style>
+
+  <img src="https://gitee.com/alingyisheng/tupian/raw/master/img/20210904111424.png" alt="20210904111424">
+  </span>
+</p>
+<p>那就从新开始吧，我还没有告诉大家我这次折腾的目的：在上一期<a href="https://www.bilibili.com/video/BV1xv411P7vM?spm_id_from=333.999.0.0">如何使用Zotero和Scrivener进行配合写作?</a>，我曾说过，在完成初稿之前，最好不要太留意排版的事情。但一旦初稿完成，排版又成了必然问题。我们使用文件管理软件，无论是<code>zotero</code>还是<code>endnote</code>，抑或是我认为的独立王国的王者<code>citavi</code>，都是为了一个功能，<code>插入</code>和<code>编辑</code>参考文献。所以，这次的主题是：如何使用Zotero和Scrivener高效管理参考文献?。</p>
+<h2 id="安装">安装</h2>
+<blockquote>
+<ol>
+<li><a href="https://www.zotero.org/download/">Zotero 下载：https://www.zotero.org/download/</a>，老老实实安回稳定版本。</li>
+</ol>
+</blockquote>
+<p><style>
+  .img-container {
+    text-align: center;
+    display: block;
+  }
+</style>
+
+  <img src="https://gitee.com/alingyisheng/tupian/raw/master/img/20210904113525.png" alt="20210904113525">
+  </span>
+</p>
+<blockquote>
+<ol start="2">
+<li><a href="https://www.libreoffice.org/download/download/">LibreOffice  下载：https://www.libreoffice.org/download/download/</a>，一个类似于微软office的软件，但是是开源免费的，可用于Windows、Mac和Linux。</li>
+</ol>
+</blockquote>
+<p><style>
+  .img-container {
+    text-align: center;
+    display: block;
+  }
+</style>
+
+  <img src="https://gitee.com/alingyisheng/tupian/raw/master/img/20210902203015.png" alt="20210902203015">
+  </span>
+</p>
+<blockquote>
+<ol start="3">
+<li>在Zotero中安装<code>LibreOffice插件</code>。当您安装Zotero并重新启动（或启动）LibreOffice时，会弹出一个安装插件的对话框，直接安装就可以了。安装完成之后可以查看一下。</li>
+</ol>
+</blockquote>
+<p><style>
+  .img-container {
+    text-align: center;
+    display: block;
+  }
+</style>
+
+  <img src="https://gitee.com/alingyisheng/tupian/raw/master/img/20210902212920.png" alt="20210902212920">
+  </span>
+</p>
+<p><style>
+  .img-container {
+    text-align: center;
+    display: block;
+  }
+</style>
+
+  <img src="https://gitee.com/alingyisheng/tupian/raw/master/img/20210902213155.png" alt="20210902213155">
+  </span>
+</p>
+<blockquote>
+<ol start="4">
+<li>安装<a href="https://www.oracle.com/java/technologies/javase-jre8-downloads.html">Java runtime:</a>。这里我就不安装了，我在这期视频中<a href="https://www.bilibili.com/video/BV1AB4y1M7bT/">效率工具-Citespace-我是如何安装这款引文可视化工具的？</a>已经安装过了。</li>
+</ol>
+</blockquote>
+<blockquote>
+<ol start="5">
+<li>在Zotero中安装<code>RTF/ODF-Scan插件</code>。<a href="https://zotero-odf-scan.github.io/zotero-odf-scan/">RTF/ODF-Scan for Zotero：https://zotero-odf-scan.github.io/zotero-odf-scan/</a>。</li>
+</ol>
+</blockquote>
+<p><style>
+  .img-container {
+    text-align: center;
+    display: block;
+  }
+</style>
+
+  <img src="https://gitee.com/alingyisheng/tupian/raw/master/img/20210902214203.png" alt="20210902214203">
+  </span>
+</p>
+<p>安装成功后在<code>zotero-工具-插件</code>，查看一下插件。</p>
+<p><style>
+  .img-container {
+    text-align: center;
+    display: block;
+  }
+</style>
+
+  <img src="https://gitee.com/alingyisheng/tupian/raw/master/img/20210902214436.png" alt="20210902214436">
+  </span>
+</p>
+<p>查看：zotero-工具，看到<code>ODF Scan</code>，证明安装成功。</p>
+<p><style>
+  .img-container {
+    text-align: center;
+    display: block;
+  }
+</style>
+
+  <img src="https://gitee.com/alingyisheng/tupian/raw/master/img/20210902214802.png" alt="20210902214802">
+  </span>
+</p>
+<blockquote>
+<ol start="6">
+<li>安装Scannable Cite.js，如果没有自动安装，就进行手动安装。先进入<a href="https://forums.zotero.org/discussion/80689/scannable-cite">这个网址：Scannable cite&hellip; - Zotero Forums</a>，按下图示找到标红线的链接，千万不要找错了，右键单击此链接，然后选择“<strong>将链接另存为</strong>”，不要单击该链接将其打开。将Scanable Cite.js文件保存在Zotero Translators文件夹中，该文件夹位于Users/Your Username/Zotero/Translators下。重新启动Zotero，然后再次检查快速复制下拉菜单。选择Scanable Cite(现在应该在那里)，您就可以开始下一步了。</li>
+</ol>
+</blockquote>
+<p><style>
+  .img-container {
+    text-align: center;
+    display: block;
+  }
+</style>
+
+  <img src="https://gitee.com/alingyisheng/tupian/raw/master/img/20210903145750.png" alt="20210903145750">
+  </span>
+</p>
+<p><style>
+  .img-container {
+    text-align: center;
+    display: block;
+  }
+</style>
+
+  <img src="https://gitee.com/alingyisheng/tupian/raw/master/img/20210903145932.png" alt="20210903145932">
+  </span>
+</p>
+<p>到此，安装结束，最关键的第6步，不要找错。</p>
+<h2 id="使用">使用</h2>
+<h3 id="初稿完成">初稿完成</h3>
+<p>在zotero中增加 2 篇文献。
+<style>
+  .img-container {
+    text-align: center;
+    display: block;
+  }
+</style>
+
+  <img src="https://gitee.com/alingyisheng/tupian/raw/master/img/20210904121135.png" alt="20210904121135">
+  </span>
+</p>
+<p>新建scrivener文稿。从上到下依此点击下图“<code>红线</code>”标记处，点击完成后可见<code>“脚注”</code>。</p>
+<p><style>
+  .img-container {
+    text-align: center;
+    display: block;
+  }
+</style>
+
+  <img src="https://gitee.com/alingyisheng/tupian/raw/master/img/20210904121536.png" alt="20210904121536">
+  </span>
+</p>
+<p>选中一段文字，把zotero中的文献直接拖动到scrivener文稿的<code>脚注</code>中，</p>
+<p><style>
+  .img-container {
+    text-align: center;
+    display: block;
+  }
+</style>
+
+  <img src="https://gitee.com/alingyisheng/tupian/raw/master/img/20210904121929.png" alt="20210904121929">
+  </span>
+</p>
+<p>看看有什么变化：</p>
+<p><style>
+  .img-container {
+    text-align: center;
+    display: block;
+  }
+</style>
+
+  <img src="https://gitee.com/alingyisheng/tupian/raw/master/img/20210904122224.png" alt="20210904122224">
+  </span>
+</p>
+<p>在<code>scrivener-文件-编译</code>，选择<code>open office (.odt)</code>, 点击<code>compile</code>，保存。我这里存在桌面，命名为<code>test</code>。</p>
+<p><style>
+  .img-container {
+    text-align: center;
+    display: block;
+  }
+</style>
+
+  <img src="https://gitee.com/alingyisheng/tupian/raw/master/img/20210904122453.png" alt="20210904122453">
+  </span>
+</p>
+<h3 id="格式转换">格式转换</h3>
+<p>来到<code>zotero-工具-ODF Scan</code>，</p>
+<p><style>
+  .img-container {
+    text-align: center;
+    display: block;
+  }
+</style>
+
+  <img src="https://gitee.com/alingyisheng/tupian/raw/master/img/20210904123221.png" alt="20210904123221">
+  </span>
+</p>
+<p>依此从上到下按图示选择，然后<code>next-finish</code>，我这里存在桌面，命名为<code>test（citations）</code>。</p>
+<p><style>
+  .img-container {
+    text-align: center;
+    display: block;
+  }
+</style>
+
+  <img src="https://gitee.com/alingyisheng/tupian/raw/master/img/20210904123603.png" alt="20210904123603">
+  </span>
+</p>
+<p>用<strong>LibreOffice</strong>打开文件<code>test（citations）</code>，可以看<code>脚注</code>，以及<code>编号</code>，</p>
+<p><style>
+  .img-container {
+    text-align: center;
+    display: block;
+  }
+</style>
+
+  <img src="https://gitee.com/alingyisheng/tupian/raw/master/img/20210904124108.png" alt="20210904124108">
+  </span>
+</p>
+<p>点击带个z的小齿轮，可以设置参考文献的样式：</p>
+<p><style>
+  .img-container {
+    text-align: center;
+    display: block;
+  }
+</style>
+
+  <img src="https://gitee.com/alingyisheng/tupian/raw/master/img/20210904124428.png" alt="20210904124428">
+  </span>
+</p>
+<p>点击带个z的小书标，生成参考文献：</p>
+<p><style>
+  .img-container {
+    text-align: center;
+    display: block;
+  }
+</style>
+
+  <img src="https://gitee.com/alingyisheng/tupian/raw/master/img/20210904124922.png" alt="20210904124922">
+  </span>
+</p>
+<p>这样，参看文献就插入完成了，如果你在zotero中对参考文献的内容进行了更改，那么这个文档里的参考文献内容也会随之更改，这就形成了一种联动。</p>
+<p>好吧，就到这里吧，有点累了。休息一会儿，还得去打捞我以前的文献。希望今天的内容对你的写作有所帮助，我是阿狸，再见。</p>
+
+
+  <footer>
+  
+<nav class="post-nav">
+  <span class="nav-prev">&larr; <a href="../../../cn/post/how-to-connected-zotero-scrivenet/">使用Zotero和Scrivener进行配合写作</a></span>
+  <span class="nav-next"></span>
+</nav>
+<script type="text/javascript">
+document.addEventListener('keyup', function(e) {
+  if (e.target.nodeName.toUpperCase() != 'BODY') return;
+  var url = false;
+  if (e.which == 37) {  
+    
+    url = '\/cn\/post\/how-to-connected-zotero-scrivenet\/';
+    
+  } else if (e.which == 39) {  
+    
+  }
+  if (url) window.location = url;
+});
+</script>
+
+
+
+
+
+<div id="gitalk-container"></div>
+<link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+<script src="https://cdn.bootcss.com/blueimp-md5/2.10.0/js/md5.js"></script>
+<script>
+  const gitalk = new Gitalk({
+    clientID: '7e6bbc8ded3722b80669',
+    clientSecret: '29d16bd7fe99b0bb6a9d0be33755c9d6d2a8a9dc',
+    repo: 'home',
+    owner: 'jiaduoli2000',
+    admin: ['jiaduoli2000'],
+    id: md5(window.location.pathname), 
+    distractionFreeMode: false 
+  });
+  (function() {
+    if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+      document.getElementById('gitalk-container').innerHTML = 'Gitalk comments not available by default when the website is previewed locally.';
+      return;
+    }
+    gitalk.render('gitalk-container');
+  })();
+</script>
+
+
+
+
+
+<script async src="../../../js/fix-toc.js"></script>
+
+<script async src="../../../js/center-img.js"></script>
+
+<script async src="../../../js/right-quote.js"></script>
+
+<script async src="../../../js/no-highlight.js"></script>
+
+<script async src="../../../js/fix-footnote.js"></script>
+
+<script async src="../../../js/math-code.js"></script>
+
+<script async src="../../../js/external-link.js"></script>
+
+<script async src="../../../js/alt-title.js"></script>
+
+<script async src="../../../js/header-link.js"></script>
+
+
+<script src="//yihui.org/js/math-code.js"></script>
+<script async src="//cdn.bootcss.com/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+<script async src="//yihui.org/js/center-img.js"></script>
+
+  
+
+
+  
+  
+  
+
+  <div class="copyright"><a href="mailto:bettermost@yeah.net"><i class='far fa-envelope fa-1x'></i></a> · <a href="https://github.com/jiaduoli2000"><i class='fab fa-github fa-1x'></i></a> · <a href="https://scholar.google.com/citations?view_op=list_works&amp;hl=zh-CN&amp;user=TC7LswQAAAAJ=zh-CN"><i class='ai ai-google-scholar ai-1x'></i></a> <br> 本站由 <a href="https://gohugo.io">Hugo</a> 和 <a href="https://bookdown.org/yihui/blogdown/">Blogdown</a> 强力驱动 © <a href="../../../">阿狸的Blog</a> 2021 - 2023 </div>
+  
+  
+
+  <script type="text/javascript" src="//rf.revolvermaps.com/0/0/6.js?i=56h9es09xn7&amp;m=6&amp;c=ff0000&amp;cr1=ffffff&amp;f=arial&amp;l=1" async="async"></script>
+  </footer>
+  </article>
+  
+  </body>
+</html>
+
