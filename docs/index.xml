@@ -8,6 +8,15 @@
     <language>en-us</language>
     <lastBuildDate>Sun, 25 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://jiaduoli2000.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>obsidian配合anki制作儿童学习卡片</title>
+      <link>https://jiaduoli2000.github.io/cn/post/obsidian-and-anki-for-flashcard/</link>
+      <pubDate>Mon, 06 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://jiaduoli2000.github.io/cn/post/obsidian-and-anki-for-flashcard/</guid>
+      <description>我的启蒙教育，大概是从卡片开始的。我是个80后，大约4、5岁的时候，爷爷开始教我识字，他用毛笔把一些简单的字写在硬纸片上，然后教我，考我，这</description>
+    </item>
+    
+    <item>
       <title>Zotero和Scrivener管理参考文献</title>
       <link>https://jiaduoli2000.github.io/cn/post/zotero-and-scrivener-manage-references/</link>
       <pubDate>Sat, 04 Sep 2021 00:00:00 +0000</pubDate>
@@ -194,33 +203,6 @@
       
       <guid>https://jiaduoli2000.github.io/cn/post/possion/</guid>
       <description>1.模型简介 [[泊松分布]]的方差和均值相等。当响应变量观测的方差比依据泊松分布预测的方差大时，泊松 回归可能发生过度离势。由于处理计数型数据</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://jiaduoli2000.github.io/cn/post/2021-09-02-bookdown%E5%88%B6%E4%BD%9C%E5%9B%BE%E4%B9%A6-giteepages%E5%B1%95%E7%A4%BA/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://jiaduoli2000.github.io/cn/post/2021-09-02-bookdown%E5%88%B6%E4%BD%9C%E5%9B%BE%E4%B9%A6-giteepages%E5%B1%95%E7%A4%BA/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://jiaduoli2000.github.io/cn/post/2021-09-02-cn-post-2021-09-02-bookdown/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://jiaduoli2000.github.io/cn/post/2021-09-02-cn-post-2021-09-02-bookdown/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://jiaduoli2000.github.io/cn/post/2021-09-02-how-to-make-a-book-by-bookdown/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://jiaduoli2000.github.io/cn/post/2021-09-02-how-to-make-a-book-by-bookdown/</guid>
-      <description></description>
     </item>
     
   </channel>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>anki on Blog Lee | 阿狸的Blog</title>
+    <link>https://jiaduoli2000.github.io/tags/anki/</link>
+    <description>Recent content in anki on Blog Lee | 阿狸的Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 06 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://jiaduoli2000.github.io/tags/anki/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>obsidian配合anki制作儿童学习卡片</title>
+      <link>https://jiaduoli2000.github.io/cn/post/obsidian-and-anki-for-flashcard/</link>
+      <pubDate>Mon, 06 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://jiaduoli2000.github.io/cn/post/obsidian-and-anki-for-flashcard/</guid>
+      <description>我的启蒙教育，大概是从卡片开始的。我是个80后，大约4、5岁的时候，爷爷开始教我识字，他用毛笔把一些简单的字写在硬纸片上，然后教我，考我，这</description>
+    </item>
+    
+  </channel>
+</rss>
