@@ -2,7 +2,7 @@
 title: 用Logseq来读《卡片笔记写作法》的感受
 author: 阿狸的Blog
 date: '2021-09-10'
-slug: cn/post/2021-09-10-logseq and kupian
+slug: 2021-09-10-logseq and kupian
 categories:
   - 效率工具
 tags:
