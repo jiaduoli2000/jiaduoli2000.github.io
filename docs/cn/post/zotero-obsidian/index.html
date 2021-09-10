@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    
+    <link rel="stylesheet" href="../../../fonts/academicons-1.8.6/css/academicons.min.css"/>
+    <link rel="icon" type="image/png" sizes="32x32" href="../../../logo/bodhi.png"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    
+    
+    <title>zotero 与 obsidian 配合提高阅读效率 - 阿狸的Blog</title>
+    
+     
+    <meta property="og:title" content="zotero 与 obsidian 配合提高阅读效率 - Blog Lee | 阿狸的Blog">
+    
+
+    
+      
+    
+
+    
+
+    
+    
+
+    <link rel="stylesheet" href="../../../css/style.css" />
+    <link rel="stylesheet" href="../../../css/mystyle.css" /> 
+    <link rel="stylesheet" href="../../../css/fonts.css" />
+    
+<script async src="../../../js/load-typekit.js"></script>
+
+
+<link rel="stylesheet" href="../../../css/custom.css" />
+
+  </head>
+  
+  <body class="cn">
+    <header class="masthead">
+      
+
+<h1><a href="https://gitee.com/alingyisheng/tupian/raw/master/img/%E9%98%BF%E7%8B%B8%E5%A4%B4%E5%83%8F%201.png"><img src="../../../logo/ale.png" alt="阿狸的Blog" /></a></h1>
+<p align="right" style="margin-top:-50px;"><small>><i>上士闻道<br>勤而行之</i></small></p>
+
+
+
+
+      <nav class="menu">
+        <input id="menu-check" type="checkbox" />
+        <label id="menu-label" for="menu-check" class="unselectable">
+          <span class="icon close-icon">✕</span>
+          <span class="icon open-icon">☰</span>
+          <span class="text">Menu</span>
+        </label>
+        <ul>
+        
+        
+        <li><a href="../../../">首页</a></li>
+        
+        <li><a href="../../../cn/about/">关于</a></li>
+        
+        <li><a href="../../../cn/post/">博客</a></li>
+        
+        <li><a href="../../../cn/cv-cn/shixiang">简历</a></li>
+        
+        <li><a href="https://gitee.com/alingyisheng/tupian/raw/master/img/%E9%98%BF%E7%8B%B8%E7%9A%84Blog-%E4%BA%8C%E7%BB%B4%E7%A0%81.jpg">公众号</a></li>
+        
+        <li><a href="https://www.zhihu.com/people/aliyisheng">知乎</a></li>
+        
+        
+
+<li class="menu-extra"></li>
+
+
+
+<li><a href="https://github.com/jiaduoli2000/home/edit/master/content/cn%5cpost%5c2021-06-25-zotero-obsidian%5cindex.md" target="_blank">编辑</a></li>
+
+
+<li><a href="../../../cn/index.xml" type="application/rss+xml" title="RSS feed">订阅</a></li>
+
+<li><a href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="Attribution-NonCommercial-ShareAlike 4.0 International">版权</a></li>
+
+
+        </ul>
+      </nav>
+    </header>
+
+    <article class="main">
+      <header class="title">
+        
+
+<h1>zotero 与 obsidian 配合提高阅读效率</h1>
+
+
+
+<h3>阿狸的Blog &middot 
+2021-06-25</h3> 
+
+
+<p style="text-align:right;">
+  分类:
+  
+    <a href="https://jiaduoli2000.github.io/categories/%E6%95%88%E7%8E%87%E5%B7%A5%E5%85%B7">效率工具</a> &nbsp
+  
+  <br>
+  标签:
+  
+    <a href="https://jiaduoli2000.github.io/tags/obsidian">obsidian</a> &nbsp
+  
+</p>
+
+
+
+   
+  
+
+
+      </header>
+
+
+<p><a href="https://www.zotero.org/">Zotero</a>是一款不错的文献管理工具，开源，免费，功能强大。作为医学生，我们可以用它来管理文献。</p>
+<p><a href="https://obsidian.md/">Obsidian</a>是一款强大的笔记软件，开源，支持双向链接，有利于我们进行知识循环。</p>
+<p>如何把二者联合起来，以提高我们的阅读效率，今天我们来探讨一下这个话题。</p>
+<h2 id="我是如何做的">我是如何做的？</h2>
+<p>假如我从<a href="https://pubmed.ncbi.nlm.nih.gov/">PubMed </a>或<a href="https://www.cnki.net/">中国知网</a>下载了一些关于关键词“胸腺瘤”的文献，并存在了我的电脑桌面上，准备进行阅读。没错，就是下面这篇。</p>
+<p><style>
+  .img-container {
+    text-align: center;
+    display: block;
+  }
+</style>
+
+  <img src="https://gitee.com/alingyisheng/tupian/raw/master/img/20210712215325.png" alt="20210712215325">
+  </span>
+</p>
+<p>现在这篇文献的PDF格式文件我已经下载好了，我首先要做的是把这个文件导入到zotero中。我可以直接把这个文件拖动到zotero中，然后就是这个样子：</p>
+<p><style>
+  .img-container {
+    text-align: center;
+    display: block;
+  }
+</style>
+
+  <img src="https://gitee.com/alingyisheng/tupian/raw/master/img/20210712215930.png" alt="20210712215930">
+  </span>
+</p>
+<p>在这里，如果是英文文献，我可选中这篇文献后，点击鼠标右键，点击重新抓取pdf的元数据，然后这篇文章的元数据就有了。
+<style>
+  .img-container {
+    text-align: center;
+    display: block;
+  }
+</style>
+
+  <img src="https://gitee.com/alingyisheng/tupian/raw/master/img/20210712220221.png" alt="20210712220221">
+  </span>
+</p>
+<h3 id="坑一-中国知网文献无法获取元数据怎么办">&ldquo;坑一&rdquo;-中国知网文献无法获取元数据怎么办？</h3>
+<p>从知网下载的中文文献的元数据获取不了。解决办法是安装“<a href="https://github.com/l0o0/jasminum">jasminum: 茉莉花</a>插件。</p>
+<blockquote>
+<p>具体安装方法可参考：
+<a href="https://zhuanlan.zhihu.com/p/159408394">简单的Zotero CNKI 中文插件 - 知乎 (zhihu.com)</a></p>
+</blockquote>
+<p>安装好茉莉花插件之后，我们选中这篇文献，点击鼠标右键，点击抓取知网元数据。</p>
+<p><style>
+  .img-container {
+    text-align: center;
+    display: block;
+  }
+</style>
+
+  <img src="https://gitee.com/alingyisheng/tupian/raw/master/img/20210712221542.png" alt="20210712221542">
+  </span>
+</p>
+<p>然后这篇文章的索引信息就有了。
+<style>
+  .img-container {
+    text-align: center;
+    display: block;
+  }
+</style>
+
+  <img src="https://gitee.com/alingyisheng/tupian/raw/master/img/20210712222838.png" alt="20210712222838">
+  </span>
+</p>
+<h3 id="开始文献阅读">开始文献阅读</h3>
+<p>在zotero中双击我刚才要阅读的那篇文献的pdf，它就会在默认的PDF阅读器中打开，这里我用的是&quot;Adobe Acrobat Pro DC&quot;，我会一边阅读，一边做一些标注。比如这样：</p>
+<p><style>
+  .img-container {
+    text-align: center;
+    display: block;
+  }
+</style>
+
+  <img src="https://gitee.com/alingyisheng/tupian/raw/master/img/20210712223302.png" alt="20210712223302">
+  </span>
+</p>
+<p>阅读完这篇文献之后，我会把pdf阅读器关掉，关掉之前会有弹出提示：要不要保存？这里一点不要忘了保存。</p>
+<h3 id="提取文献内容到obsidian">提取文献内容到Obsidian</h3>
+<h4 id="准备工作1zotero安装插件">准备工作1：zotero安装插件</h4>
+<ol>
+<li><a href="http://zotfile.com/">ZotFile</a>插件</li>
+<li><a href="https://github.com/argenos/zotero-mdnotes">Mdnotes for Zotero</a>插件</li>
+<li><a href="https://retorque.re/zotero-better-bibtex/installation/">Better BibTex for ZoteroI</a>插件</li>
+</ol>
+<p>安装方法比较简单，先下载，然后常规安装，这里就不赘述了。安装完成后是这个样子：</p>
+<p><style>
+  .img-container {
+    text-align: center;
+    display: block;
+  }
+</style>
+
+  <img src="https://gitee.com/alingyisheng/tupian/raw/master/img/20210712225020.png" alt="20210712225020">
+  </span>
+</p>
+<h4 id="准备工作2obsidian安装插件">准备工作2：Obsidian安装插件</h4>
+<ol>
+<li><a href="https://github.com/hans/obsidian-citation-plugin/releases/tag/0.4.3">obsidian-citation-plugin</a>插件</li>
+</ol>
+<p>安装方法比较简单，先下载，然后常规安装，这里就不赘述了。安装完成后是这个样子：</p>
+<p><style>
+  .img-container {
+    text-align: center;
+    display: block;
+  }
+</style>
+
+  <img src="https://gitee.com/alingyisheng/tupian/raw/master/img/20210712225611.png" alt="20210712225611">
+  </span>
+</p>
+<blockquote>
+<p>安装完成后需要进行一些设置，具体设置方法参考：
+<a href="https://blog.csdn.net/weixin_39758618/article/details/113326410">zotero插件_ob和zotero连用（Citation插件介绍）</a></p>
+</blockquote>
+<h4 id="zotero中pdf注释提取">zotero中pdf注释提取</h4>
+<p>我们回到zotero，选中我刚才阅读完的那篇文献，点击右键，在弹出的选项中找到“Manage Attachments”，然后进一步选择“Extract Annotations”。</p>
+<p><style>
+  .img-container {
+    text-align: center;
+    display: block;
+  }
+</style>
+
+  <img src="https://gitee.com/alingyisheng/tupian2/raw/master/20210713083931.png" alt="20210713083931">
+  </span>
+</p>
+<p>然后就会提取出pdf注释，并生成一个新文件如下：</p>
+<p><style>
+  .img-container {
+    text-align: center;
+    display: block;
+  }
+</style>
+
+  <img src="https://gitee.com/alingyisheng/tupian2/raw/master/20210713084904.png" alt="20210713084904">
+  </span>
+</p>
+<p>我们可以点击这个文件看一下，可以看到最右侧就显示了我们之前在pdf阅读器中注释的内容。</p>
+<h4 id="从zotero提取文献信息到obsidian">从zotero提取文献信息到obsidian</h4>
+<p>下面开始提取我们刚才阅读的那篇文献的信息到obsidian，我们选中文献，点击右键，在弹出的选项中找到“Mdnotes”，然后进一步选择“Create Mdnotes file”。（这里有三个选择，另外两个“Export to markdown”，“Batch export to markdown”，你可以自己尝试一下，看看会有什么效果。）</p>
+<p><style>
+  .img-container {
+    text-align: center;
+    display: block;
+  }
+</style>
+
+  <img src="https://gitee.com/alingyisheng/tupian2/raw/master/20210713085456.png" alt="20210713085456">
+  </span>
+</p>
+<p>我们把“Create Mdnotes file”建立的文件存储在一个文件夹中，这里我已经在obsidian文件夹的根目录建立一个文件夹，并命名文件夹名为“6 - References”。我就把新建立的markdown文件存在这里。</p>
+<p><style>
+  .img-container {
+    text-align: center;
+    display: block;
+  }
+</style>
+
+  <img src="https://gitee.com/alingyisheng/tupian2/raw/master/20210713090544.png" alt="20210713090544">
+  </span>
+</p>
+<p>点击&quot;打开&quot;，然后点击“保存”，然后我们在obsidian中来看一下新保存的这个文件。</p>
+<p><style>
+  .img-container {
+    text-align: center;
+    display: block;
+  }
+</style>
+
+  <img src="https://gitee.com/alingyisheng/tupian2/raw/master/20210713091133.png" alt="20210713091133">
+  </span>
+</p>
+<p>这个样子好像并不符合我可胃口，需要调整一下这个内容模板。</p>
+<h4 id="调整保存到obsidian中的内容模板">调整保存到obsidian中的内容模板</h4>
+<p>我们希望从zotero提取到obsidian中的内容符合我们的阅读习惯，我们就要制作自己的模板。首先，在菜单栏选择&quot;工具“, 然后选择”Mdnotes preferences“。</p>
+<p><style>
+  .img-container {
+    text-align: center;
+    display: block;
+  }
+</style>
+
+  <img src="https://gitee.com/alingyisheng/tupian2/raw/master/20210713091854.png" alt="20210713091854">
+  </span>
+</p>
+<p>点击之后，会弹出一个对话框，如下：</p>
+<p><style>
+  .img-container {
+    text-align: center;
+    display: block;
+  }
+</style>
+
+  <img src="https://gitee.com/alingyisheng/tupian2/raw/master/20210713092141.png" alt="20210713092141">
+  </span>
+</p>
+<p>我们在”Template folder“中选择”模板所在的文件夹“，我这里还是选择文件夹 ”6 - References“。因为，在这之前我已经把我做好的模板放在了这个文件夹中。</p>
+<p><style>
+  .img-container {
+    text-align: center;
+    display: block;
+  }
+</style>
+
+  <img src="https://gitee.com/alingyisheng/tupian2/raw/master/20210713092657.png" alt="20210713092657">
+  </span>
+</p>
+<p>这个模板也是一个markdown文件，我的这个模板的名称是”Mdnotes Default Template“样式是这样的：</p>
+<p><style>
+  .img-container {
+    text-align: center;
+    display: block;
+  }
+</style>
+
+  <img src="https://gitee.com/alingyisheng/tupian2/raw/master/20210713092850.png" alt="20210713092850">
+  </span>
+</p>
+<h4 id="再次从zotero提取文献信息到obsidian">再次从zotero提取文献信息到obsidian</h4>
+<p>设置好模板之后，我们把原先那个从zotero导入到obsidian的文件删掉，然后重新导入一次，看看会有什么变化。操作方法同前。</p>
+<p><style>
+  .img-container {
+    text-align: center;
+    display: block;
+  }
+</style>
+
+  <img src="https://gitee.com/alingyisheng/tupian2/raw/master/20210713085456.png" alt="20210713085456">
+  </span>
+</p>
+<p>然后我们看看应用了”模板“后，会是什么样子：</p>
+<p><style>
+  .img-container {
+    text-align: center;
+    display: block;
+  }
+</style>
+
+  <img src="https://gitee.com/alingyisheng/tupian2/raw/master/20210713094123.png" alt="20210713094123">
+  </span>
+</p>
+<p>是不是与没有应用模板的时候发生了很大的变化，我们看看这里都包含了哪些信息：</p>
+<ol>
+<li>
+<p>标题：
+<style>
+  .img-container {
+    text-align: center;
+    display: block;
+  }
+</style>
+
+  <img src="https://gitee.com/alingyisheng/tupian2/raw/master/20210713094455.png" alt="20210713094455">
+  </span>
+</p>
+</li>
+<li>
+<p>作者：
+<style>
+  .img-container {
+    text-align: center;
+    display: block;
+  }
+</style>
+
+  <img src="https://gitee.com/alingyisheng/tupian2/raw/master/20210713094554.png" alt="20210713094554">
+  </span>
+</p>
+</li>
+<li>
+<p>发表时间：
+<style>
+  .img-container {
+    text-align: center;
+    display: block;
+  }
+</style>
+
+  <img src="https://gitee.com/alingyisheng/tupian2/raw/master/20210713094706.png" alt="20210713094706">
+  </span>
+</p>
+</li>
+<li>
+<p>标签：
+<style>
+  .img-container {
+    text-align: center;
+    display: block;
+  }
+</style>
+
+  <img src="https://gitee.com/alingyisheng/tupian2/raw/master/20210713094826.png" alt="20210713094826">
+  </span>
+</p>
+</li>
+<li>
+<p>文献的网页链接：
+<style>
+  .img-container {
+    text-align: center;
+    display: block;
+  }
+</style>
+
+  <img src="https://gitee.com/alingyisheng/tupian2/raw/master/20210713095015.png" alt="20210713095015">
+  </span>
+</p>
+</li>
+<li>
+<p>连接到zotero所在位置
+<style>
+  .img-container {
+    text-align: center;
+    display: block;
+  }
+</style>
+
+  <img src="https://gitee.com/alingyisheng/tupian2/raw/master/20210713095308.png" alt="20210713095308">
+  </span>
+</p>
+</li>
+<li>
+<p>本地PDF附件
+<style>
+  .img-container {
+    text-align: center;
+    display: block;
+  }
+</style>
+
+  <img src="https://gitee.com/alingyisheng/tupian2/raw/master/20210713095422.png" alt="20210713095422">
+  </span>
+</p>
+</li>
+<li>
+<p>pdf中的注释内容
+<style>
+  .img-container {
+    text-align: center;
+    display: block;
+  }
+</style>
+
+  <img src="https://gitee.com/alingyisheng/tupian2/raw/master/20210713095541.png" alt="20210713095541">
+  </span>
+</p>
+</li>
+</ol>
+<p>好吧，就是这些内容，如果你还需要文献的其他信息，你可以自己编辑自己的模板。</p>
+<h2 id="小结">小结</h2>
+<p>本文读起来可能有些复杂，主要是设置过程，安装许多插件，但一旦设置完成，用起来就会很方便。特别是obsidian强大的标签和链接功能，我们很容易找到我们之前阅读过的文献内容，而不至于读完某篇文献后，想用的时候就再也找不到了，然后就，没有然后了。所以，不要害怕这个设置过程，一步一步做下来，你会感觉也不是很复杂的。</p>
+<p>如果按照这个教程没有设置成功的化，记得告诉我。我已经尽力写的明白，但能力有限，有些时候自己可能表达的不太清楚，如果不清楚的化可以给我留言，共同探讨解决。我的个人公众号及B站up都名为：阿狸的Blog，欢迎点赞关注。然后我会做一个同名的视频教程，可能会讲得清楚一些。好吧，我是阿狸，再见。</p>
+
+
+  <footer>
+  
+<nav class="post-nav">
+  <span class="nav-prev">&larr; <a href="../../../cn/post/citespace-pubmed/">下载新版PubMed为xml格式文件并导入CiteSpace</a></span>
+  <span class="nav-next"><a href="../../../cn/post/zettlr-markdown/">在Zettlr(Markdown 编辑器)中插入参考文献</a> &rarr;</span>
+</nav>
+<script type="text/javascript">
+document.addEventListener('keyup', function(e) {
+  if (e.target.nodeName.toUpperCase() != 'BODY') return;
+  var url = false;
+  if (e.which == 37) {  
+    
+    url = '\/cn\/post\/citespace-pubmed\/';
+    
+  } else if (e.which == 39) {  
+    
+    url = '\/cn\/post\/zettlr-markdown\/';
+    
+  }
+  if (url) window.location = url;
+});
+</script>
+
+
+
+
+
+<div id="gitalk-container"></div>
+<link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+<script src="https://cdn.bootcss.com/blueimp-md5/2.10.0/js/md5.js"></script>
+<script>
+  const gitalk = new Gitalk({
+    clientID: '7e6bbc8ded3722b80669',
+    clientSecret: '29d16bd7fe99b0bb6a9d0be33755c9d6d2a8a9dc',
+    repo: 'home',
+    owner: 'jiaduoli2000',
+    admin: ['jiaduoli2000'],
+    id: md5(window.location.pathname), 
+    distractionFreeMode: false 
+  });
+  (function() {
+    if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+      document.getElementById('gitalk-container').innerHTML = 'Gitalk comments not available by default when the website is previewed locally.';
+      return;
+    }
+    gitalk.render('gitalk-container');
+  })();
+</script>
+
+
+
+
+
+<script async src="../../../js/fix-toc.js"></script>
+
+<script async src="../../../js/center-img.js"></script>
+
+<script async src="../../../js/right-quote.js"></script>
+
+<script async src="../../../js/no-highlight.js"></script>
+
+<script async src="../../../js/fix-footnote.js"></script>
+
+<script async src="../../../js/math-code.js"></script>
+
+<script async src="../../../js/external-link.js"></script>
+
+<script async src="../../../js/alt-title.js"></script>
+
+<script async src="../../../js/header-link.js"></script>
+
+
+<script src="//yihui.org/js/math-code.js"></script>
+<script async src="//cdn.bootcss.com/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+<script async src="//yihui.org/js/center-img.js"></script>
+
+  
+
+
+  
+  
+  
+
+  <div class="copyright"><a href="mailto:bettermost@yeah.net"><i class='far fa-envelope fa-1x'></i></a> · <a href="https://github.com/jiaduoli2000"><i class='fab fa-github fa-1x'></i></a> · <a href="https://scholar.google.com/citations?view_op=list_works&amp;hl=zh-CN&amp;user=TC7LswQAAAAJ=zh-CN"><i class='ai ai-google-scholar ai-1x'></i></a> <br> 本站由 <a href="https://gohugo.io">Hugo</a> 和 <a href="https://bookdown.org/yihui/blogdown/">Blogdown</a> 强力驱动 © <a href="../../../">阿狸的Blog</a> 2021 - 2023 </div>
+  
+  
+
+  <script type="text/javascript" src="//rf.revolvermaps.com/0/0/6.js?i=56h9es09xn7&amp;m=6&amp;c=ff0000&amp;cr1=ffffff&amp;f=arial&amp;l=1" async="async"></script>
+  </footer>
+  </article>
+  
+  </body>
+</html>
+

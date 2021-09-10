@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>效率工具 on Blog Lee | 阿狸的Blog</title>
+    <link>https://jiaduoli2000.github.io/categories/%E6%95%88%E7%8E%87%E5%B7%A5%E5%85%B7/</link>
+    <description>Recent content in 效率工具 on Blog Lee | 阿狸的Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 10 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://jiaduoli2000.github.io/categories/%E6%95%88%E7%8E%87%E5%B7%A5%E5%85%B7/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>用Logseq来读《卡片笔记写作法》的感受</title>
+      <link>https://jiaduoli2000.github.io/cn/post/2021-09-10-logseq-and-kupian/</link>
+      <pubDate>Fri, 10 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://jiaduoli2000.github.io/cn/post/2021-09-10-logseq-and-kupian/</guid>
+      <description>今天有个小伙伴问我，为什么在使用zotero beta时，使用软件自带的pdf阅读器，mdnote无法导出markdown文件。具体原因我也无</description>
+    </item>
+    
+    <item>
+      <title>obsidian配合anki制作儿童学习卡片</title>
+      <link>https://jiaduoli2000.github.io/cn/post/obsidian-and-anki-for-flashcard/</link>
+      <pubDate>Mon, 06 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://jiaduoli2000.github.io/cn/post/obsidian-and-anki-for-flashcard/</guid>
+      <description>我的启蒙教育，大概是从卡片开始的。我是个80后，大约4、5岁的时候，爷爷开始教我识字，他用毛笔把一些简单的字写在硬纸片上，然后教我，考我，这</description>
+    </item>
+    
+    <item>
+      <title>使用Zotero和Scrivener进行配合写作</title>
+      <link>https://jiaduoli2000.github.io/cn/post/how-to-connected-zotero-scrivenet/</link>
+      <pubDate>Tue, 31 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://jiaduoli2000.github.io/cn/post/how-to-connected-zotero-scrivenet/</guid>
+      <description>前面我们了解了zotero 与 obsidian 配合提高阅读效率，可是我们阅读的目的大多数都是为了写作，所以我又介绍了一个写作神器Scrivener。如果说用</description>
+    </item>
+    
+    <item>
+      <title>如何推送本地内容到码云（Gitee）？</title>
+      <link>https://jiaduoli2000.github.io/cn/post/how-to-push-test-to-gitee/</link>
+      <pubDate>Tue, 31 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://jiaduoli2000.github.io/cn/post/how-to-push-test-to-gitee/</guid>
+      <description>无奈于github推送的速度太慢，或者干脆无法推送。似乎推送本地内容到码云Gitee是一个解决办法。为什么要推送到网络上，这里我是本着开源的</description>
+    </item>
+    
+    <item>
+      <title>FydeOS折腾记录</title>
+      <link>https://jiaduoli2000.github.io/cn/post/fydeos/</link>
+      <pubDate>Thu, 26 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://jiaduoli2000.github.io/cn/post/fydeos/</guid>
+      <description>最近爱折腾的老毛病又犯了，看着家里那台龟速的旧笔记本，折腾之心再起。以前已经重装过N次系统，包括windows，也包括linux，都不太理想</description>
+    </item>
+    
+    <item>
+      <title>Mimics-气管肺的重建</title>
+      <link>https://jiaduoli2000.github.io/cn/post/mimics-lung-seg/</link>
+      <pubDate>Wed, 11 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://jiaduoli2000.github.io/cn/post/mimics-lung-seg/</guid>
+      <description>1. 导入数据 打开mimics 21.0, .img-container { text-align: center; display: block; } 选择New Project, 在弹出的对话框中选择数据，这里是肺CT示例-1， .img-container { text-align: center; display: block; } 数据导入完成并显示， .img-container {</description>
+    </item>
+    
+    <item>
+      <title>TCIA数据库获取影像DICM文件</title>
+      <link>https://jiaduoli2000.github.io/cn/post/tcia-dicm/</link>
+      <pubDate>Sat, 07 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://jiaduoli2000.github.io/cn/post/tcia-dicm/</guid>
+      <description>大家好，我是阿狸，这里是阿狸笔记，今天的内容是我自学Mimics软件的第二集。上一节，我学会了如何安装Mimics。软件安装好了之后，要进一</description>
+    </item>
+    
+    <item>
+      <title>Materialise Mimics-初识之安装</title>
+      <link>https://jiaduoli2000.github.io/cn/post/materialise-mimics-soft/</link>
+      <pubDate>Tue, 03 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://jiaduoli2000.github.io/cn/post/materialise-mimics-soft/</guid>
+      <description>Materialise Mimics 初识 Materialise Mimics，用于医学影像处理。CT和MRI的断层图像都能进行三维重建，输出为通用的三维格式，然后进行三维打印、科研、医疗、有限元</description>
+    </item>
+    
+    <item>
+      <title>用python将视频生成帧图</title>
+      <link>https://jiaduoli2000.github.io/cn/post/python-video-to-img/</link>
+      <pubDate>Sun, 01 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://jiaduoli2000.github.io/cn/post/python-video-to-img/</guid>
+      <description>用python将视频生成帧图 安装opencv-python 首先，打开Anaconda Prompt(Anaconda3), .img-container { text-align: center; display: block; } 输入命令：pip install opencv-pyth</description>
+    </item>
+    
+    <item>
+      <title>效率工具-文献检索之Research Rabbit</title>
+      <link>https://jiaduoli2000.github.io/cn/post/research-rabbit/</link>
+      <pubDate>Thu, 29 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://jiaduoli2000.github.io/cn/post/research-rabbit/</guid>
+      <description>大家好，我是阿狸，今天，我们来了解一下Research Rabbit（研究兔子）。一种新的文献检索及可视化工具，它使用 AI 帮助我们发现相关且有趣</description>
+    </item>
+    
+    <item>
+      <title>R语言-bibliometrix包-文献可视化工具</title>
+      <link>https://jiaduoli2000.github.io/cn/post/r-bibliometrix/</link>
+      <pubDate>Sun, 25 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://jiaduoli2000.github.io/cn/post/r-bibliometrix/</guid>
+      <description>bibliometrix包安装与调用 bibliometrix，是一款R包，Bibliometix这款R包，是基于【文献计量学】开发的。通过文</description>
+    </item>
+    
+    <item>
+      <title>在Zettlr(Markdown 编辑器)中插入参考文献</title>
+      <link>https://jiaduoli2000.github.io/cn/post/zettlr-markdown/</link>
+      <pubDate>Thu, 15 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://jiaduoli2000.github.io/cn/post/zettlr-markdown/</guid>
+      <description>Zettlr，一种Markdown 编辑器，开源，是为非编码技术人员设计的，用作者的话说，是专门为社会科学、历史或政治学的学生打造的，因为作者</description>
+    </item>
+    
+    <item>
+      <title>zotero 与 obsidian 配合提高阅读效率</title>
+      <link>https://jiaduoli2000.github.io/cn/post/zotero-obsidian/</link>
+      <pubDate>Fri, 25 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://jiaduoli2000.github.io/cn/post/zotero-obsidian/</guid>
+      <description>Zotero是一款不错的文献管理工具，开源，免费，功能强大。作为医学生，我们可以用它来管理文献。 Obsidian是一款强大的笔记软件，开源，</description>
+    </item>
+    
+    <item>
+      <title>下载新版PubMed为xml格式文件并导入CiteSpace</title>
+      <link>https://jiaduoli2000.github.io/cn/post/citespace-pubmed/</link>
+      <pubDate>Mon, 21 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://jiaduoli2000.github.io/cn/post/citespace-pubmed/</guid>
+      <description>上一期我们学习了CiteSpace，也叫引文空间，是一个强大的文献可视化工具。作为一个医学生，我们经常要在PubMed来检索生物医学文献，本</description>
+    </item>
+    
+  </channel>
+</rss>

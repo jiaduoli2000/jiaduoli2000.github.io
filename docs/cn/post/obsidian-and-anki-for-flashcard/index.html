@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    
+    <link rel="stylesheet" href="../../../fonts/academicons-1.8.6/css/academicons.min.css"/>
+    <link rel="icon" type="image/png" sizes="32x32" href="../../../logo/bodhi.png"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    
+    
+    <title>obsidian配合anki制作儿童学习卡片 - 阿狸的Blog</title>
+    
+     
+    <meta property="og:title" content="obsidian配合anki制作儿童学习卡片 - Blog Lee | 阿狸的Blog">
+    
+
+    
+      
+    
+
+    
+
+    
+    
+
+
+<link href='//cdn.bootcss.com/highlight.js/9.12.0/styles/Xcode.min.css' rel='stylesheet' type='text/css' />
+
+
+
+    <link rel="stylesheet" href="../../../css/style.css" />
+    <link rel="stylesheet" href="../../../css/mystyle.css" /> 
+    <link rel="stylesheet" href="../../../css/fonts.css" />
+    
+<script async src="../../../js/load-typekit.js"></script>
+
+
+<link rel="stylesheet" href="../../../css/custom.css" />
+
+  </head>
+  
+  <body class="cn">
+    <header class="masthead">
+      
+
+<h1><a href="https://gitee.com/alingyisheng/tupian/raw/master/img/%E9%98%BF%E7%8B%B8%E5%A4%B4%E5%83%8F%201.png"><img src="../../../logo/ale.png" alt="阿狸的Blog" /></a></h1>
+<p align="right" style="margin-top:-50px;"><small>><i>上士闻道<br>勤而行之</i></small></p>
+
+
+
+
+      <nav class="menu">
+        <input id="menu-check" type="checkbox" />
+        <label id="menu-label" for="menu-check" class="unselectable">
+          <span class="icon close-icon">✕</span>
+          <span class="icon open-icon">☰</span>
+          <span class="text">Menu</span>
+        </label>
+        <ul>
+        
+        
+        <li><a href="../../../">首页</a></li>
+        
+        <li><a href="../../../cn/about/">关于</a></li>
+        
+        <li><a href="../../../cn/post/">博客</a></li>
+        
+        <li><a href="../../../cn/cv-cn/shixiang">简历</a></li>
+        
+        <li><a href="https://gitee.com/alingyisheng/tupian/raw/master/img/%E9%98%BF%E7%8B%B8%E7%9A%84Blog-%E4%BA%8C%E7%BB%B4%E7%A0%81.jpg">公众号</a></li>
+        
+        <li><a href="https://www.zhihu.com/people/aliyisheng">知乎</a></li>
+        
+        
+
+<li class="menu-extra"></li>
+
+
+
+<li><a href="https://github.com/jiaduoli2000/home/edit/master/content/cn%5cpost%5c2021-09-06-obsidian-and-anki-for-flashcard%5cindex.md" target="_blank">编辑</a></li>
+
+
+<li><a href="../../../cn/index.xml" type="application/rss+xml" title="RSS feed">订阅</a></li>
+
+<li><a href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="Attribution-NonCommercial-ShareAlike 4.0 International">版权</a></li>
+
+
+        </ul>
+      </nav>
+    </header>
+
+    <article class="main">
+      <header class="title">
+        
+
+<h1>obsidian配合anki制作儿童学习卡片</h1>
+
+
+
+<h3>阿狸的Blog &middot 
+2021-09-06</h3> 
+
+
+<p style="text-align:right;">
+  分类:
+  
+    <a href="https://jiaduoli2000.github.io/categories/%E6%95%88%E7%8E%87%E5%B7%A5%E5%85%B7">效率工具</a> &nbsp
+  
+  <br>
+  标签:
+  
+    <a href="https://jiaduoli2000.github.io/tags/anki">anki</a> &nbsp
+  
+</p>
+
+
+
+   
+  
+
+
+      </header>
+
+
+<p>我的启蒙教育，大概是从卡片开始的。我是个80后，大约4、5岁的时候，爷爷开始教我识字，他用毛笔把一些简单的字写在硬纸片上，然后教我，考我，这就是爷爷对我的教育方式。爷爷年轻时做过村里的中学老师，是村里不多的 “读书人&quot;。他很严厉，除了识字卡片。爷爷的抽屉里还有一把戒尺，虽然不常用，但我还是品尝过被敲打的滋味，至今记忆尤新。四五岁的小孩毕竟懵懂无知，谁愿意去背枯燥无味的卡片。爷爷的眼神不好，所以我常常趁着爷爷不注意，抓起几张卡片藏在一边。这个儿时的”污点“，至今还常常被长辈们提起，成为了我儿时的趣事儿。</p>
+<p><style>
+  .img-container {
+    text-align: center;
+    display: block;
+  }
+</style>
+
+  <img src="https://gitee.com/alingyisheng/tupian/raw/master/img/IMG_20210906_152241_BURST001_COVER%5B1%5D.jpg" alt="当年爷爷抄写的中药方">
+  </span>
+</p>
+<p>爷爷过世已经近30年了，但他的身影却永远停留在了我的记忆里。有了孩子之后，我却没有把爷爷的卡片传承下去。妈妈常常说：“别整天鼓捣你的电脑，抽点时间去培养你的孩子，比啥都强！”。这是妈妈的原话。没错，我把教育丢给学校，作为父母确实不太负责。其实，初为父母会很困惑，如何教孩子，教什么，从什么时候开始教…… 一大堆的问题。在这个教育机构以及电子产品乱飞的时代，怎样教孩子变得更加难以抉择。</p>
+<p>我想我还是要把爷爷的”卡片教育法“传承下去，无论教育的效果如何。至少多年之后，这段经历能留在孩子们的记忆里。如今键盘代替了毛笔，平板手机成了新的知识载体。即使”卡片精神“不变，”卡片形式“也许要与时俱进了。于是，就有了今天的工作流：obsidian配合anki制作儿童学习卡片。</p>
+<p>今天的内容，我只是提供一制作卡片的方法。关于卡片，无论是制作方法，还是制作内容，都是仁者见仁、智者见智。希望你有更好的方法或者内容分享给我。我也很想了解一些关于儿童教育的知识。当然，卡片的用法很多，可以用来背单词、刷题，如果这种方法适合你的话。</p>
+<h2 id="安装">安装</h2>
+<blockquote>
+<p>安装Obsidian（黑曜石），<a href="https://obsidian.md/">Obsidian下载: https://obsidian.md/</a>，有人说obsidian是完美的笔记管理软件，虽然有些过誉，但我已成为iobsidian的忠实粉丝，它正在帮我打理我的电脑和文件。我发现，无论在知乎还是B站，都有一大群爱好者关注着obsidian的变化，几乎每天都有新的插件诞生。开源，本地化，双向链接，强大的插件系统让obsidian迅速成为了笔记软件中的璀璨新星。希望obsidian能像他说的那样，<code>for you, forever</code>。</p>
+</blockquote>
+<p><style>
+  .img-container {
+    text-align: center;
+    display: block;
+  }
+</style>
+
+  <img src="https://gitee.com/alingyisheng/tupian/raw/master/img/20210906120039.png" alt="20210906120039">
+  </span>
+</p>
+<blockquote>
+<p>在obsidian中安装插件：<code>Flashcards plugin</code>，我会把插件链接放在下方。安装插件的方法，就是下载好之后，解压文件，形成一个文件夹，然后放在<code>.obsidian</code>的<code>plugins</code>的文件夹中，如果没有<code>plugins</code>这个文件夹，那就自己建一个。安装完成后记得在obsidian中的<code>第三方插件中</code>启用。</p>
+</blockquote>
+<p><style>
+  .img-container {
+    text-align: center;
+    display: block;
+  }
+</style>
+
+  <img src="https://gitee.com/alingyisheng/tupian/raw/master/img/20210906123916.png" alt="20210906123916">
+  </span>
+</p>
+<blockquote>
+<p>安装Anki（暗记），<a href="https://apps.ankiweb.net/">Anki下载：https://apps.ankiweb.net/</a>。安装过程同常规软件。安装完成后要注册账号才可以在电脑和手机之间同步，这样也可以防止制作的卡片丢失。</p>
+</blockquote>
+<p><style>
+  .img-container {
+    text-align: center;
+    display: block;
+  }
+</style>
+
+  <img src="https://gitee.com/alingyisheng/tupian/raw/master/img/20210906123717.png" alt="20210906123717">
+  </span>
+</p>
+<blockquote>
+<p>在Anki中安装插件<code>AnkiConnect</code>。启动Anki后，依此点击，<code>工具-插件-获取插件-代码</code>，输入：<code>2055492159</code>，点击ok。</p>
+</blockquote>
+<p><style>
+  .img-container {
+    text-align: center;
+    display: block;
+  }
+</style>
+
+  <img src="https://gitee.com/alingyisheng/tupian/raw/master/img/20210906125101.png" alt="20210906125101">
+  </span>
+</p>
+<p>配置插件<code>AnkiConnect</code>，选中<code>AnkiConnect-配置</code>，把下面的代码粘贴到绿框中，替换原有的代码，点击<code>ok</code>。<strong>重新启动</strong>。</p>
+<pre><code>{
+    &quot;apiKey&quot;: null,
+    &quot;apiLogPath&quot;: null,
+    &quot;webBindAddress&quot;: &quot;127.0.0.1&quot;,
+    &quot;webBindPort&quot;: 8765,
+    &quot;webCorsOrigin&quot;: &quot;http://localhost&quot;,
+    &quot;webCorsOriginList&quot;: [
+        &quot;http://localhost&quot;,
+        &quot;app://obsidian.md&quot;
+    ]
+}
+</code></pre><p><style>
+  .img-container {
+    text-align: center;
+    display: block;
+  }
+</style>
+
+  <img src="https://gitee.com/alingyisheng/tupian/raw/master/img/20210906125435.png" alt="20210906125435">
+  </span>
+</p>
+<h2 id="使用">使用</h2>
+<h3 id="制作卡片">制作卡片</h3>
+<p>打开obsidian，打开anki（制卡期间不要关闭），在obsidian中新建一个<code>markdown</code>文件，这里我命名为<code>test-儿童卡片</code>，我在笔记里先插入一张图片<code>把闹钟调到六点</code>（卡片正面），然后输入<code>#card</code>，然后输入<code>set the alarm clock for six</code>（卡片背面）-制作中遗漏了字幕<code>r</code>。然后点击obsidian里的<code>flashcard</code>插件的图标，会弹出一个创建开片成功的提示。</p>
+<p><style>
+  .img-container {
+    text-align: center;
+    display: block;
+  }
+</style>
+
+  <img src="https://gitee.com/alingyisheng/tupian/raw/master/img/20210906134320.png" alt="20210906134320">
+  </span>
+</p>
+<h3 id="查看卡片">查看卡片</h3>
+<p>我们打开anki来看一下制作好的卡片，点击<code>未学习：1</code>，这是我们刚刚做好的那张卡片，<code>Default</code>是我们默认的牌组，牌组相当于一个分类的卡片盒，我们可以起一个好听的名字。然后点击：<code>现在学习</code>。</p>
+<p><style>
+  .img-container {
+    text-align: center;
+    display: block;
+  }
+</style>
+
+  <img src="https://gitee.com/alingyisheng/tupian/raw/master/img/20210906135256.png" alt="20210906135256">
+  </span>
+</p>
+<p>小学生，测试开始：（请用英语说出）</p>
+<p><style>
+  .img-container {
+    text-align: center;
+    display: block;
+  }
+</style>
+
+  <img src="https://gitee.com/alingyisheng/tupian/raw/master/img/20210906135820.png" alt="20210906135820">
+  </span>
+</p>
+<p>看看你的回答对么？点击<code>显示答案</code>。并按照你的回答结果，分别选择<code>忘记-困难-良好-简单</code>，anki会根据你的选择按时间<code>1分-6分-10分-4天</code>来再次进行测试。</p>
+<p><style>
+  .img-container {
+    text-align: center;
+    display: block;
+  }
+</style>
+
+  <img src="https://gitee.com/alingyisheng/tupian/raw/master/img/20210906135926.png" alt="20210906135926">
+  </span>
+</p>
+<h3 id="同步手机或平板">同步手机或平板</h3>
+<p>当我们制作了多个卡片之后，我们就可以应用了。如果觉得电脑不方便的话，可以通过anki账号登陆到手机或平板使用。这里我是在华为的应用商店里搜索“<code>anki 记忆卡</code>”。然后按照手机app，登陆账号，同步刷新就好。这里注意不要频繁刷新，会有卡顿，建议间隔10分钟以上。</p>
+<p><style>
+  .img-container {
+    text-align: center;
+    display: block;
+  }
+</style>
+
+  <img src="https://gitee.com/alingyisheng/tupian/raw/master/img/20210906150655.png" alt="20210906150655">
+  </span>
+
+如果手机显示下图中的<code>同步错误：</code></p>
+<p><style>
+  .img-container {
+    text-align: center;
+    display: block;
+  }
+</style>
+
+  <img src="https://gitee.com/alingyisheng/tupian/raw/master/img/20210906150132.png" alt="20210906150132">
+  </span>
+</p>
+<p>按下图选中进行设置即可解决：选中<code>旧时区处理</code></p>
+<p><style>
+  .img-container {
+    text-align: center;
+    display: block;
+  }
+</style>
+
+  <img src="https://gitee.com/alingyisheng/tupian/raw/master/img/20210906145417.png" alt="20210906145417">
+  </span>
+</p>
+<p>今天的内容就是这些了，关于卡片的内容，我还不能确定要给孩子灌输哪些知识。即使这样，让他们体验一下这种卡片记忆法也是好的。如果他们感兴趣，我就多做一些卡片，如果不太感冒的话，我再看看有没有别的办法。我并不希望给他们灌输知识，我希望他们对世界充满好奇，并勇敢的探索未知世界，有求知欲，又有自己的学习方法。</p>
+<p>好吧，今天的内容就是这些。这里是阿狸的Blog，再见。</p>
+<p>附件：
+<strong>Flashcards plugin：</strong>
+链接：https://pan.baidu.com/s/11s50lkyAHDUtIQuPTyMhrw 
+提取码：z1c6</p>
+
+
+  <footer>
+  
+<nav class="post-nav">
+  <span class="nav-prev">&larr; <a href="../../../cn/post/zotero-and-scrivener-manage-references/">Zotero和Scrivener管理参考文献</a></span>
+  <span class="nav-next"><a href="../../../cn/post/2021-09-10-logseq-and-kupian/">用Logseq来读《卡片笔记写作法》的感受</a> &rarr;</span>
+</nav>
+<script type="text/javascript">
+document.addEventListener('keyup', function(e) {
+  if (e.target.nodeName.toUpperCase() != 'BODY') return;
+  var url = false;
+  if (e.which == 37) {  
+    
+    url = '\/cn\/post\/zotero-and-scrivener-manage-references\/';
+    
+  } else if (e.which == 39) {  
+    
+    url = '\/cn\/post\/2021-09-10-logseq-and-kupian\/';
+    
+  }
+  if (url) window.location = url;
+});
+</script>
+
+
+
+
+
+<div id="gitalk-container"></div>
+<link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+<script src="https://cdn.bootcss.com/blueimp-md5/2.10.0/js/md5.js"></script>
+<script>
+  const gitalk = new Gitalk({
+    clientID: '7e6bbc8ded3722b80669',
+    clientSecret: '29d16bd7fe99b0bb6a9d0be33755c9d6d2a8a9dc',
+    repo: 'home',
+    owner: 'jiaduoli2000',
+    admin: ['jiaduoli2000'],
+    id: md5(window.location.pathname), 
+    distractionFreeMode: false 
+  });
+  (function() {
+    if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+      document.getElementById('gitalk-container').innerHTML = 'Gitalk comments not available by default when the website is previewed locally.';
+      return;
+    }
+    gitalk.render('gitalk-container');
+  })();
+</script>
+
+
+
+
+
+<script async src="../../../js/fix-toc.js"></script>
+
+<script async src="../../../js/center-img.js"></script>
+
+<script async src="../../../js/right-quote.js"></script>
+
+<script async src="../../../js/no-highlight.js"></script>
+
+<script async src="../../../js/fix-footnote.js"></script>
+
+<script async src="../../../js/math-code.js"></script>
+
+<script async src="../../../js/external-link.js"></script>
+
+<script async src="../../../js/alt-title.js"></script>
+
+<script async src="../../../js/header-link.js"></script>
+
+
+<script src="//yihui.org/js/math-code.js"></script>
+<script async src="//cdn.bootcss.com/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+<script async src="//yihui.org/js/center-img.js"></script>
+
+  
+
+
+
+<script src="//cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+
+
+
+<script src="//cdn.bootcss.com/highlight.js/9.12.0/languages/r.min.js"></script>
+<script src="//cdn.bootcss.com/highlight.js/9.12.0/languages/yaml.min.js"></script>
+<script src="//cdn.bootcss.com/highlight.js/9.12.0/languages/tex.min.js"></script>
+<script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+
+
+
+
+  
+  
+  
+
+  <div class="copyright"><a href="mailto:bettermost@yeah.net"><i class='far fa-envelope fa-1x'></i></a> · <a href="https://github.com/jiaduoli2000"><i class='fab fa-github fa-1x'></i></a> · <a href="https://scholar.google.com/citations?view_op=list_works&amp;hl=zh-CN&amp;user=TC7LswQAAAAJ=zh-CN"><i class='ai ai-google-scholar ai-1x'></i></a> <br> 本站由 <a href="https://gohugo.io">Hugo</a> 和 <a href="https://bookdown.org/yihui/blogdown/">Blogdown</a> 强力驱动 © <a href="../../../">阿狸的Blog</a> 2021 - 2023 </div>
+  
+  
+
+  <script type="text/javascript" src="//rf.revolvermaps.com/0/0/6.js?i=56h9es09xn7&amp;m=6&amp;c=ff0000&amp;cr1=ffffff&amp;f=arial&amp;l=1" async="async"></script>
+  </footer>
+  </article>
+  
+  </body>
+</html>
+
