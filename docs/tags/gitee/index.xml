@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>gitee on Blog Lee | 阿狸的Blog</title>
+    <link>https://jiaduoli2000.github.io/tags/gitee/</link>
+    <description>Recent content in gitee on Blog Lee | 阿狸的Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 31 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://jiaduoli2000.github.io/tags/gitee/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>如何推送本地内容到码云（Gitee）？</title>
+      <link>https://jiaduoli2000.github.io/cn/post/how-to-push-test-to-gitee/</link>
+      <pubDate>Tue, 31 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://jiaduoli2000.github.io/cn/post/how-to-push-test-to-gitee/</guid>
+      <description>无奈于github推送的速度太慢，或者干脆无法推送。似乎推送本地内容到码云Gitee是一个解决办法。为什么要推送到网络上，这里我是本着开源的</description>
+    </item>
+    
+  </channel>
+</rss>

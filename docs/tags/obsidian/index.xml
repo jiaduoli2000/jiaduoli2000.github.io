@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>obsidian on Blog Lee | 阿狸的Blog</title>
+    <link>https://jiaduoli2000.github.io/tags/obsidian/</link>
+    <description>Recent content in obsidian on Blog Lee | 阿狸的Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 25 Jun 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://jiaduoli2000.github.io/tags/obsidian/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>zotero 与 obsidian 配合提高阅读效率</title>
+      <link>https://jiaduoli2000.github.io/cn/post/zotero-obsidian/</link>
+      <pubDate>Fri, 25 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://jiaduoli2000.github.io/cn/post/zotero-obsidian/</guid>
+      <description>Zotero是一款不错的文献管理工具，开源，免费，功能强大。作为医学生，我们可以用它来管理文献。 Obsidian是一款强大的笔记软件，开源，</description>
+    </item>
+    
+  </channel>
+</rss>

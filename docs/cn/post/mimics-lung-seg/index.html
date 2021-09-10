@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    
+    <link rel="stylesheet" href="../../../fonts/academicons-1.8.6/css/academicons.min.css"/>
+    <link rel="icon" type="image/png" sizes="32x32" href="../../../logo/bodhi.png"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    
+    
+    <title>Mimics-气管肺的重建 - 阿狸的Blog</title>
+    
+     
+    <meta property="og:title" content="Mimics-气管肺的重建 - Blog Lee | 阿狸的Blog">
+    
+
+    
+      
+    
+
+    
+
+    
+    
+
+    <link rel="stylesheet" href="../../../css/style.css" />
+    <link rel="stylesheet" href="../../../css/mystyle.css" /> 
+    <link rel="stylesheet" href="../../../css/fonts.css" />
+    
+<script async src="../../../js/load-typekit.js"></script>
+
+
+<link rel="stylesheet" href="../../../css/custom.css" />
+
+  </head>
+  
+  <body class="cn">
+    <header class="masthead">
+      
+
+<h1><a href="https://gitee.com/alingyisheng/tupian/raw/master/img/%E9%98%BF%E7%8B%B8%E5%A4%B4%E5%83%8F%201.png"><img src="../../../logo/ale.png" alt="阿狸的Blog" /></a></h1>
+<p align="right" style="margin-top:-50px;"><small>><i>上士闻道<br>勤而行之</i></small></p>
+
+
+
+
+      <nav class="menu">
+        <input id="menu-check" type="checkbox" />
+        <label id="menu-label" for="menu-check" class="unselectable">
+          <span class="icon close-icon">✕</span>
+          <span class="icon open-icon">☰</span>
+          <span class="text">Menu</span>
+        </label>
+        <ul>
+        
+        
+        <li><a href="../../../">首页</a></li>
+        
+        <li><a href="../../../cn/about/">关于</a></li>
+        
+        <li><a href="../../../cn/post/">博客</a></li>
+        
+        <li><a href="../../../cn/cv-cn/shixiang">简历</a></li>
+        
+        <li><a href="https://gitee.com/alingyisheng/tupian/raw/master/img/%E9%98%BF%E7%8B%B8%E7%9A%84Blog-%E4%BA%8C%E7%BB%B4%E7%A0%81.jpg">公众号</a></li>
+        
+        <li><a href="https://www.zhihu.com/people/aliyisheng">知乎</a></li>
+        
+        
+
+<li class="menu-extra"></li>
+
+
+
+<li><a href="https://github.com/jiaduoli2000/home/edit/master/content/cn%5cpost%5c2021-08-11-mimics-lung-seg%5cindex.md" target="_blank">编辑</a></li>
+
+
+<li><a href="../../../cn/index.xml" type="application/rss+xml" title="RSS feed">订阅</a></li>
+
+<li><a href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="Attribution-NonCommercial-ShareAlike 4.0 International">版权</a></li>
+
+
+        </ul>
+      </nav>
+    </header>
+
+    <article class="main">
+      <header class="title">
+        
+
+<h1>Mimics-气管肺的重建</h1>
+
+
+
+<h3>阿狸的Blog &middot 
+2021-08-11</h3> 
+
+
+<p style="text-align:right;">
+  分类:
+  
+    <a href="https://jiaduoli2000.github.io/categories/%E6%95%88%E7%8E%87%E5%B7%A5%E5%85%B7">效率工具</a> &nbsp
+  
+  <br>
+  标签:
+  
+    <a href="https://jiaduoli2000.github.io/tags/mimics">mimics</a> &nbsp
+  
+</p>
+
+
+
+   
+  
+
+
+      </header>
+
+
+<h2 id="1-导入数据">1. 导入数据</h2>
+<p>打开<code>mimics 21.0</code>,</p>
+<p><style>
+  .img-container {
+    text-align: center;
+    display: block;
+  }
+</style>
+
+  <img src="https://gitee.com/alingyisheng/tupian/raw/master/img/20210811164115.png" alt="20210811164115">
+  </span>
+</p>
+<p>选择<code>New Project</code>, 在弹出的对话框中选择数据，这里是<code>肺CT示例-1</code>，</p>
+<p><style>
+  .img-container {
+    text-align: center;
+    display: block;
+  }
+</style>
+
+  <img src="https://gitee.com/alingyisheng/tupian/raw/master/img/20210811164243.png" alt="20210811164243">
+  </span>
+</p>
+<p>数据导入完成并显示，</p>
+<p><style>
+  .img-container {
+    text-align: center;
+    display: block;
+  }
+</style>
+
+  <img src="https://gitee.com/alingyisheng/tupian/raw/master/img/20210811164441.png" alt="20210811164441">
+  </span>
+</p>
+<h2 id="2-segment-airway-重建气道">2. Segment airway 重建气道</h2>
+<p>选择最上方菜单栏<code>ADVANCED SEGMENT</code>, 然后选择<code>Segment airway</code>, → <code>start</code></p>
+<p><style>
+  .img-container {
+    text-align: center;
+    display: block;
+  }
+</style>
+
+  <img src="https://gitee.com/alingyisheng/tupian/raw/master/img/20210811164750.png" alt="20210811164750">
+  </span>
+</p>
+<p>用弹出的画笔在气管上标记两个点，</p>
+<p><style>
+  .img-container {
+    text-align: center;
+    display: block;
+  }
+</style>
+
+  <img src="https://gitee.com/alingyisheng/tupian/raw/master/img/20210811164946.png" alt="20210811164946">
+  </span>
+</p>
+<p>标记之后开始自动建立气道模型</p>
+<p><style>
+  .img-container {
+    text-align: center;
+    display: block;
+  }
+</style>
+
+  <img src="https://gitee.com/alingyisheng/tupian/raw/master/img/20210811165108.png" alt="20210811165108">
+  </span>
+</p>
+<p>这里了解一些操作方式：</p>
+<ul>
+<li>光标放在工作区，点击空格键，可以在单个工作区和4个界面之间进行切换</li>
+<li>鼠标右键按住后移动：调节CT灰度值（肺窗和纵隔窗之间切换）</li>
+<li>鼠标<code>右键+Ctrl</code>: 放大或缩小CT图像</li>
+<li>鼠标滚珠持续按住：可以平移图像。或者<code>shift+右键</code>。</li>
+</ul>
+<p><style>
+  .img-container {
+    text-align: center;
+    display: block;
+  }
+</style>
+
+  <img src="https://gitee.com/alingyisheng/tupian/raw/master/img/20210811165235.png" alt="20210811165235">
+  </span>
+</p>
+<p>然后点击<code>calculate part</code>,</p>
+<p><style>
+  .img-container {
+    text-align: center;
+    display: block;
+  }
+</style>
+
+  <img src="https://gitee.com/alingyisheng/tupian/raw/master/img/20210811170418.png" alt="20210811170418">
+  </span>
+</p>
+<p>选中重建好的<code>airway</code>, 点击右键，弹窗中可以选择<code>smooth</code>来调整模型光滑度，</p>
+<p><style>
+  .img-container {
+    text-align: center;
+    display: block;
+  }
+</style>
+
+  <img src="https://gitee.com/alingyisheng/tupian/raw/master/img/20210811170627.png" alt="20210811170627">
+  </span>
+</p>
+<p>也可以选择<code>properties</code>修改名字，或颜色。</p>
+<p><style>
+  .img-container {
+    text-align: center;
+    display: block;
+  }
+</style>
+
+  <img src="https://gitee.com/alingyisheng/tupian/raw/master/img/20210811170701.png" alt="20210811170701">
+  </span>
+</p>
+<h2 id="centerline-label-标记中心线">Centerline label 标记中心线</h2>
+<p>选择<code>New centerline label</code>, 选择<code>Smoothed_Aiway1</code>, 点击<code>next</code>,</p>
+<p><style>
+  .img-container {
+    text-align: center;
+    display: block;
+  }
+</style>
+
+  <img src="https://gitee.com/alingyisheng/tupian/raw/master/img/20210811172342.png" alt="20210811172342">
+  </span>
+</p>
+<p>在弹出的对话框中，根据医学知识检查软件标记的是否正确，错误的化可以重新标识和更改，然后点击<code>apply</code>。</p>
+<p><style>
+  .img-container {
+    text-align: center;
+    display: block;
+  }
+</style>
+
+  <img src="https://gitee.com/alingyisheng/tupian/raw/master/img/20210811172631.png" alt="20210811172631">
+  </span>
+</p>
+<h2 id="segment-lung-and-lobes-肺叶的重建和分割">Segment lung and lobes 肺叶的重建和分割</h2>
+<p>点击<code>Segment lung and lobes</code>, 选择刚才标记的中心线<code>Centerline 1</code>，然后点击<code>next</code>,</p>
+<p><style>
+  .img-container {
+    text-align: center;
+    display: block;
+  }
+</style>
+
+  <img src="https://gitee.com/alingyisheng/tupian/raw/master/img/20210811173133.png" alt="20210811173133">
+  </span>
+</p>
+<p>重建完毕，肺叶及肺裂已经被分割出来了，</p>
+<p><style>
+  .img-container {
+    text-align: center;
+    display: block;
+  }
+</style>
+
+  <img src="https://gitee.com/alingyisheng/tupian/raw/master/img/20210811173521.png" alt="20210811173521">
+  </span>
+</p>
+<p>如果肺列识别的不好，可以点击上图中<code>Edit Fissures</code>，进行手动编辑。可以增加点，删除点等。</p>
+<p><style>
+  .img-container {
+    text-align: center;
+    display: block;
+  }
+</style>
+
+  <img src="https://gitee.com/alingyisheng/tupian/raw/master/img/20210811173829.png" alt="20210811173829">
+  </span>
+</p>
+<p>可以在CT肺窗中查看肺裂分割线，看软件分析的是否准确，不准确的化可以进行修正</p>
+<p><style>
+  .img-container {
+    text-align: center;
+    display: block;
+  }
+</style>
+
+  <img src="https://gitee.com/alingyisheng/tupian/raw/master/img/20210811174303.png" alt="20210811174303">
+  </span>
+</p>
+<p>编辑完成之后，选择<code>next</code>，肺叶的维重建就完成了。</p>
+<p><style>
+  .img-container {
+    text-align: center;
+    display: block;
+  }
+</style>
+
+  <img src="https://gitee.com/alingyisheng/tupian/raw/master/img/20210811181134.png" alt="20210811181134">
+  </span>
+</p>
+<h2 id="cut-through-points-分割肺叶">cut through points 分割肺叶</h2>
+<p>点击<code>cut through points</code>, 然后点击新建<code>new</code>，</p>
+<p><style>
+  .img-container {
+    text-align: center;
+    display: block;
+  }
+</style>
+
+  <img src="https://gitee.com/alingyisheng/tupian/raw/master/img/20210811181811.png" alt="20210811181811">
+  </span>
+</p>
+<p>新建了一个<code>CP4</code>，然后在肺窗中标记肺裂，然后选择要分割的肺叶，然后选择以<code>CP4</code>为界限分割,然后点击<code>ok</code>, 就可以分割了。</p>
+<p><style>
+  .img-container {
+    text-align: center;
+    display: block;
+  }
+</style>
+
+  <img src="https://gitee.com/alingyisheng/tupian/raw/master/img/20210811184146.png" alt="20210811184146">
+  </span>
+</p>
+<p>可以看到右下肺已经被分割成两部分了。这里主要学习这个功能，实际分割要在完成肺血管成像之后再进行，才会对临床有知道意义。</p>
+<p><style>
+  .img-container {
+    text-align: center;
+    display: block;
+  }
+</style>
+
+  <img src="https://gitee.com/alingyisheng/tupian/raw/master/img/20210811184314.png" alt="20210811184314">
+  </span>
+</p>
+<p>好吧，今天的内容就是这些，不足之处还请批评指正。本节涉及的主要模块是：</p>
+<ul>
+<li>Segment airway 重建气道</li>
+<li>Centerline label 标记中心线</li>
+<li>Segment lung and lobes 肺叶的重建和分割</li>
+<li>cut through points 分割肺叶</li>
+</ul>
+
+
+  <footer>
+  
+<nav class="post-nav">
+  <span class="nav-prev">&larr; <a href="../../../cn/post/tcia-dicm/">TCIA数据库获取影像DICM文件</a></span>
+  <span class="nav-next"><a href="../../../cn/post/fydeos/">FydeOS折腾记录</a> &rarr;</span>
+</nav>
+<script type="text/javascript">
+document.addEventListener('keyup', function(e) {
+  if (e.target.nodeName.toUpperCase() != 'BODY') return;
+  var url = false;
+  if (e.which == 37) {  
+    
+    url = '\/cn\/post\/tcia-dicm\/';
+    
+  } else if (e.which == 39) {  
+    
+    url = '\/cn\/post\/fydeos\/';
+    
+  }
+  if (url) window.location = url;
+});
+</script>
+
+
+
+
+
+<div id="gitalk-container"></div>
+<link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+<script src="https://cdn.bootcss.com/blueimp-md5/2.10.0/js/md5.js"></script>
+<script>
+  const gitalk = new Gitalk({
+    clientID: '7e6bbc8ded3722b80669',
+    clientSecret: '29d16bd7fe99b0bb6a9d0be33755c9d6d2a8a9dc',
+    repo: 'home',
+    owner: 'jiaduoli2000',
+    admin: ['jiaduoli2000'],
+    id: md5(window.location.pathname), 
+    distractionFreeMode: false 
+  });
+  (function() {
+    if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+      document.getElementById('gitalk-container').innerHTML = 'Gitalk comments not available by default when the website is previewed locally.';
+      return;
+    }
+    gitalk.render('gitalk-container');
+  })();
+</script>
+
+
+
+
+
+<script async src="../../../js/fix-toc.js"></script>
+
+<script async src="../../../js/center-img.js"></script>
+
+<script async src="../../../js/right-quote.js"></script>
+
+<script async src="../../../js/no-highlight.js"></script>
+
+<script async src="../../../js/fix-footnote.js"></script>
+
+<script async src="../../../js/math-code.js"></script>
+
+<script async src="../../../js/external-link.js"></script>
+
+<script async src="../../../js/alt-title.js"></script>
+
+<script async src="../../../js/header-link.js"></script>
+
+
+<script src="//yihui.org/js/math-code.js"></script>
+<script async src="//cdn.bootcss.com/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+<script async src="//yihui.org/js/center-img.js"></script>
+
+  
+
+
+  
+  
+  
+
+  <div class="copyright"><a href="mailto:bettermost@yeah.net"><i class='far fa-envelope fa-1x'></i></a> · <a href="https://github.com/jiaduoli2000"><i class='fab fa-github fa-1x'></i></a> · <a href="https://scholar.google.com/citations?view_op=list_works&amp;hl=zh-CN&amp;user=TC7LswQAAAAJ=zh-CN"><i class='ai ai-google-scholar ai-1x'></i></a> <br> 本站由 <a href="https://gohugo.io">Hugo</a> 和 <a href="https://bookdown.org/yihui/blogdown/">Blogdown</a> 强力驱动 © <a href="../../../">阿狸的Blog</a> 2021 - 2023 </div>
+  
+  
+
+  <script type="text/javascript" src="//rf.revolvermaps.com/0/0/6.js?i=56h9es09xn7&amp;m=6&amp;c=ff0000&amp;cr1=ffffff&amp;f=arial&amp;l=1" async="async"></script>
+  </footer>
+  </article>
+  
+  </body>
+</html>
+

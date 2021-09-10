@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    
+    <link rel="stylesheet" href="../../../fonts/academicons-1.8.6/css/academicons.min.css"/>
+    <link rel="icon" type="image/png" sizes="32x32" href="../../../logo/bodhi.png"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    
+    
+    <title>R语言—支持向量机（SVM） - 阿狸的Blog</title>
+    
+     
+    <meta property="og:title" content="R语言—支持向量机（SVM） - Blog Lee | 阿狸的Blog">
+    
+
+    
+      
+    
+
+    
+
+    
+    
+
+
+<link href='//cdn.bootcss.com/highlight.js/9.12.0/styles/Xcode.min.css' rel='stylesheet' type='text/css' />
+
+
+
+    <link rel="stylesheet" href="../../../css/style.css" />
+    <link rel="stylesheet" href="../../../css/mystyle.css" /> 
+    <link rel="stylesheet" href="../../../css/fonts.css" />
+    
+<script async src="../../../js/load-typekit.js"></script>
+
+
+<link rel="stylesheet" href="../../../css/custom.css" />
+
+  </head>
+  
+  <body class="cn">
+    <header class="masthead">
+      
+
+<h1><a href="https://gitee.com/alingyisheng/tupian/raw/master/img/%E9%98%BF%E7%8B%B8%E5%A4%B4%E5%83%8F%201.png"><img src="../../../logo/ale.png" alt="阿狸的Blog" /></a></h1>
+<p align="right" style="margin-top:-50px;"><small>><i>上士闻道<br>勤而行之</i></small></p>
+
+
+
+
+      <nav class="menu">
+        <input id="menu-check" type="checkbox" />
+        <label id="menu-label" for="menu-check" class="unselectable">
+          <span class="icon close-icon">✕</span>
+          <span class="icon open-icon">☰</span>
+          <span class="text">Menu</span>
+        </label>
+        <ul>
+        
+        
+        <li><a href="../../../">首页</a></li>
+        
+        <li><a href="../../../cn/about/">关于</a></li>
+        
+        <li><a href="../../../cn/post/">博客</a></li>
+        
+        <li><a href="../../../cn/cv-cn/shixiang">简历</a></li>
+        
+        <li><a href="https://gitee.com/alingyisheng/tupian/raw/master/img/%E9%98%BF%E7%8B%B8%E7%9A%84Blog-%E4%BA%8C%E7%BB%B4%E7%A0%81.jpg">公众号</a></li>
+        
+        <li><a href="https://www.zhihu.com/people/aliyisheng">知乎</a></li>
+        
+        
+
+<li class="menu-extra"></li>
+
+
+
+
+
+
+<li><a href="https://github.com/jiaduoli2000/home/edit/master/content/cn/post/2021-08-27-r-svm-support/index.Rmd" target="_blank">编辑</a></li>
+
+
+<li><a href="../../../cn/index.xml" type="application/rss+xml" title="RSS feed">订阅</a></li>
+
+<li><a href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="Attribution-NonCommercial-ShareAlike 4.0 International">版权</a></li>
+
+
+        </ul>
+      </nav>
+    </header>
+
+    <article class="main">
+      <header class="title">
+        
+
+<h1>R语言—支持向量机（SVM）</h1>
+
+
+
+<h3>阿狸的Blog &middot 
+2021-08-27</h3> 
+
+
+<p style="text-align:right;">
+  分类:
+  
+    <a href="https://jiaduoli2000.github.io/categories/r">r</a> &nbsp
+  
+  <br>
+  标签:
+  
+    <a href="https://jiaduoli2000.github.io/tags/svm">svm</a> &nbsp
+  
+</p>
+
+
+
+   
+  
+
+
+      </header>
+
+
+
+<script src="https://jiaduoli2000.github.io/cn/post/r-svm-support/index_files/header-attrs/header-attrs.js"></script>
+
+
+<p>今天，第一次尝试用R Markdown来写学习笔记，这是一个边学边记录的过程，今天的内容是支持向量机（Support Vector Machines），简称SVM。</p>
+<div id="数据集介绍" class="section level2">
+<h2>数据集介绍</h2>
+<p>今天用到的还是R包自带的”iris”数据集，下面我们导入数据：</p>
+<pre class="r"><code>data(&quot;iris&quot;)</code></pre>
+<p>查看前六行：</p>
+<pre class="r"><code>str(iris)</code></pre>
+<pre><code>## &#39;data.frame&#39;:    150 obs. of  5 variables:
+##  $ Sepal.Length: num  5.1 4.9 4.7 4.6 5 5.4 4.6 5 4.4 4.9 ...
+##  $ Sepal.Width : num  3.5 3 3.2 3.1 3.6 3.9 3.4 3.4 2.9 3.1 ...
+##  $ Petal.Length: num  1.4 1.4 1.3 1.5 1.4 1.7 1.4 1.5 1.4 1.5 ...
+##  $ Petal.Width : num  0.2 0.2 0.2 0.2 0.2 0.4 0.3 0.2 0.2 0.1 ...
+##  $ Species     : Factor w/ 3 levels &quot;setosa&quot;,&quot;versicolor&quot;,..: 1 1 1 1 1 1 1 1 1 1 ...</code></pre>
+<p>数据集可视化：调用qplot函数绘制散点图，其中Petal.Length为x轴，Petal.Width为y轴：</p>
+<pre class="r"><code>library(ggplot2)</code></pre>
+<pre class="r"><code>qplot(Petal.Length,Petal.Width,data = iris,
+      color=Species)</code></pre>
+<p><img src="https://jiaduoli2000.github.io/cn/post/r-svm-support/index_files/figure-html/unnamed-chunk-4-1.png" width="672" /></p>
+<div class="figure">
+<img src="https://gitee.com/alingyisheng/tupian/raw/master/img/20210827234155.png" alt="" />
+<p class="caption">20210827234155</p>
+</div>
+</div>
+<div id="支持向量机" class="section level2">
+<h2>支持向量机</h2>
+<p>SVM用于分析用于分类和回归分析的数据。它主要用于分类问题。在该算法中，每个数据项被绘制为n维空间中的一个点(其中n是特征的数量)，每个特征的值是特定坐标的值。然后，通过寻找最能区分这两类的超平面来执行分类。</p>
+<div class="figure">
+<img src="https://gitee.com/alingyisheng/tupian/raw/master/img/20210827210511.png" style="width:100.0%" alt="" />
+<p class="caption">20210827210511</p>
+</div>
+<p>除了执行线性分类之外，SVM可以有效地执行非线性分类。</p>
+<div class="figure">
+<img src="https://gitee.com/alingyisheng/tupian/raw/master/img/20210827211244.png" alt="" />
+<p class="caption">20210827211244</p>
+</div>
+<p>在SVM的众多packages中，台湾⼤学林智仁⽼师开发的LIBSVM最常用，也就是下面要用到的”e1071”包。</p>
+<pre class="r"><code>library(e1071)</code></pre>
+<div id="用svm函数来建立模型" class="section level3">
+<h3>用svm函数来建立模型：</h3>
+<pre class="r"><code>mymodel &lt;- svm(Species~.,data=iris)
+summary(mymodel)</code></pre>
+<pre><code>## 
+## Call:
+## svm(formula = Species ~ ., data = iris)
+## 
+## 
+## Parameters:
+##    SVM-Type:  C-classification 
+##  SVM-Kernel:  radial 
+##        cost:  1 
+## 
+## Number of Support Vectors:  51
+## 
+##  ( 8 22 21 )
+## 
+## 
+## Number of Classes:  3 
+## 
+## Levels: 
+##  setosa versicolor virginica</code></pre>
+<p>分析数据可以看出:</p>
+<p>SVM-分类机：C-classification。共五种：C-classification，nu-classification，one-classification(for novelty detection) ，eps-regression， nu-regression。</p>
+<p>SVM-核函数:radial。共四类：线性核函数（linear）、多项式核函数（polynomial）、径向基核函数（radial basis,RBF）和神经网络核函数（sigmoid）。</p>
+<p>cost:1。C分类中惩罚项c的取值。</p>
+<p>支持向量的数量是51。</p>
+</div>
+<div id="模型可视化" class="section level3">
+<h3>模型可视化：</h3>
+<pre class="r"><code>plot(mymodel,data = iris,
+     Petal.Width~Petal.Length,
+     slice = list(Sepal.Width = 3, Sepal.Length = 4))</code></pre>
+<p><img src="https://jiaduoli2000.github.io/cn/post/r-svm-support/index_files/figure-html/unnamed-chunk-7-1.png" width="672" /></p>
+<div class="figure">
+<img src="https://gitee.com/alingyisheng/tupian/raw/master/img/20210827234727.png" alt="" />
+<p class="caption">20210827234727</p>
+</div>
+<p>因为整个数据集有4个变量，这里我门把Sepal.Width = 3, Sepal.Length = 4，即设定为固定值。</p>
+<p>每种颜色代表一个物种的类别（setosa/versicolor/virginica）。其中8个属于setosa。浅黄色图中共有8个”×”</p>
+</div>
+</div>
+<div id="混淆矩阵" class="section level2">
+<h2>混淆矩阵</h2>
+<p>我们将使用创建的模型来预测每个物种。</p>
+<pre class="r"><code>pred &lt;- predict(mymodel,iris)
+tab &lt;- table(Predicted = pred,Actual = iris$Species)
+tab</code></pre>
+<pre><code>##             Actual
+## Predicted    setosa versicolor virginica
+##   setosa         50          0         0
+##   versicolor      0         48         2
+##   virginica       0          2        48</code></pre>
+<p>从表中可以看出，有50个点属于物种<code>setosa</code>,48个属于<code>versicolor</code>,这里有2个被预测成了<code>virginica</code>。我们来计算一下总的错误率。</p>
+<pre class="r"><code>1-sum(diag(tab))/sum(tab)</code></pre>
+<pre><code>## [1] 0.02666667</code></pre>
+<p>约为2.7％，改模型使用径向基核函数（radial）为核心。下面我们来尝试应用其他核函数：线性核函数（linear）、多项式核函数（polynomial）和神经网络核函数（sigmoid）。</p>
+<ul>
+<li>线性核函数（linear）错误率：</li>
+</ul>
+<pre class="r"><code>mymodel &lt;- svm(Species~.,data=iris,kernel = &quot;linear&quot;)
+summary(mymodel)</code></pre>
+<pre><code>## 
+## Call:
+## svm(formula = Species ~ ., data = iris, kernel = &quot;linear&quot;)
+## 
+## 
+## Parameters:
+##    SVM-Type:  C-classification 
+##  SVM-Kernel:  linear 
+##        cost:  1 
+## 
+## Number of Support Vectors:  29
+## 
+##  ( 2 15 12 )
+## 
+## 
+## Number of Classes:  3 
+## 
+## Levels: 
+##  setosa versicolor virginica</code></pre>
+<pre class="r"><code>plot(mymodel,data = iris,
+     Petal.Width~Petal.Length,
+     slice = list(Sepal.Width = 3, Sepal.Length = 4))</code></pre>
+<p><img src="https://jiaduoli2000.github.io/cn/post/r-svm-support/index_files/figure-html/unnamed-chunk-10-1.png" width="672" /></p>
+<pre class="r"><code>pred &lt;- predict(mymodel,iris)
+tab &lt;- table(Predicted = pred,Actual = iris$Species)
+tab</code></pre>
+<pre><code>##             Actual
+## Predicted    setosa versicolor virginica
+##   setosa         50          0         0
+##   versicolor      0         46         1
+##   virginica       0          4        49</code></pre>
+<pre class="r"><code>1-sum(diag(tab))/sum(tab)</code></pre>
+<pre><code>## [1] 0.03333333</code></pre>
+<div class="figure">
+<img src="https://gitee.com/alingyisheng/tupian/raw/master/img/20210827234824.png" alt="" />
+<p class="caption">20210827234824</p>
+</div>
+<p>这里错误率是3.3％，较<code>radial</code>增加。</p>
+<ul>
+<li>多项式核函数（polynomial）及错误率：</li>
+</ul>
+<pre class="r"><code>mymodel &lt;- svm(Species~.,data=iris,kernel = &quot;polynomial&quot;)
+summary(mymodel)</code></pre>
+<pre><code>## 
+## Call:
+## svm(formula = Species ~ ., data = iris, kernel = &quot;polynomial&quot;)
+## 
+## 
+## Parameters:
+##    SVM-Type:  C-classification 
+##  SVM-Kernel:  polynomial 
+##        cost:  1 
+##      degree:  3 
+##      coef.0:  0 
+## 
+## Number of Support Vectors:  54
+## 
+##  ( 6 26 22 )
+## 
+## 
+## Number of Classes:  3 
+## 
+## Levels: 
+##  setosa versicolor virginica</code></pre>
+<pre class="r"><code>plot(mymodel,data = iris,
+     Petal.Width~Petal.Length,
+     slice = list(Sepal.Width = 3, Sepal.Length = 4))</code></pre>
+<p><img src="https://jiaduoli2000.github.io/cn/post/r-svm-support/index_files/figure-html/unnamed-chunk-11-1.png" width="672" /></p>
+<pre class="r"><code>pred &lt;- predict(mymodel,iris)
+tab &lt;- table(Predicted = pred,Actual = iris$Species)
+tab</code></pre>
+<pre><code>##             Actual
+## Predicted    setosa versicolor virginica
+##   setosa         50          0         0
+##   versicolor      0         50         7
+##   virginica       0          0        43</code></pre>
+<pre class="r"><code>1-sum(diag(tab))/sum(tab)</code></pre>
+<pre><code>## [1] 0.04666667</code></pre>
+<p><img src="https://gitee.com/alingyisheng/tupian/raw/master/img/20210827234914.png" alt="20210827234914" />
+这里错误率是4.7％，较<code>radial</code>增加。</p>
+<ul>
+<li>神经网络核函数（sigmoid）及错误率：</li>
+</ul>
+<pre class="r"><code>mymodel &lt;- svm(Species~.,data=iris,kernel = &quot;sigmoid&quot;)
+summary(mymodel)</code></pre>
+<pre><code>## 
+## Call:
+## svm(formula = Species ~ ., data = iris, kernel = &quot;sigmoid&quot;)
+## 
+## 
+## Parameters:
+##    SVM-Type:  C-classification 
+##  SVM-Kernel:  sigmoid 
+##        cost:  1 
+##      coef.0:  0 
+## 
+## Number of Support Vectors:  54
+## 
+##  ( 6 26 22 )
+## 
+## 
+## Number of Classes:  3 
+## 
+## Levels: 
+##  setosa versicolor virginica</code></pre>
+<pre class="r"><code>plot(mymodel,data = iris,
+     Petal.Width~Petal.Length,
+     slice = list(Sepal.Width = 3, Sepal.Length = 4))</code></pre>
+<p><img src="https://jiaduoli2000.github.io/cn/post/r-svm-support/index_files/figure-html/unnamed-chunk-12-1.png" width="672" /></p>
+<pre class="r"><code>pred &lt;- predict(mymodel,iris)
+tab &lt;- table(Predicted = pred,Actual = iris$Species)
+tab</code></pre>
+<pre><code>##             Actual
+## Predicted    setosa versicolor virginica
+##   setosa         49          0         0
+##   versicolor      1         41         7
+##   virginica       0          9        43</code></pre>
+<pre class="r"><code>1-sum(diag(tab))/sum(tab)</code></pre>
+<pre><code>## [1] 0.1133333</code></pre>
+<p><img src="https://gitee.com/alingyisheng/tupian/raw/master/img/20210827234939.png" alt="20210827234939" />
+这里错误率是11.3％，较<code>radial</code>增加。在所有核函数中性能最差。</p>
+</div>
+<div id="模型的调整超参数优化" class="section level2">
+<h2>模型的调整（超参数优化）</h2>
+<p>这里我们使用tune()函数来及逆行调整。</p>
+<pre class="r"><code>set.seed(124)
+tmodel &lt;- tune(svm,Species~.,data = iris,
+               ranges = list(epsilon = seq(0,1,0.1,),
+               cost = 2^(2:9)))</code></pre>
+<p>这里使用从0开始，并以0.1递增的序列。即我们将有11个不同的值：
+epsilon：0，0.1，0.2，0.3，0.4，0.5，0.6，0.7，0.8，0.9，1.0。</p>
+<p>另一个需要微调的参数是<code>cost</code>。这个值太大会导致过拟合。太小会导致拟合不足。所以使用较大的范围，以便能够获得最佳。即我们将有8个不同的值：
+cost：2<sup>2,2</sup>3,2<sup>4,2</sup>5,2<sup>6,2</sup>7,2<sup>8,2</sup>9。</p>
+<p>这样就会得到：11×8种组合。组合越多，可能需要的时间就越长。</p>
+<p>绘制tmodel：</p>
+<pre class="r"><code>plot(tmodel)</code></pre>
+<p><img src="https://jiaduoli2000.github.io/cn/post/r-svm-support/index_files/figure-html/unnamed-chunk-14-1.png" width="672" />
+<img src="https://gitee.com/alingyisheng/tupian/raw/master/img/20210827235015.png" alt="20210827235015" />
+参数对应较暗的区域意味着更好的结果在这些区域。根据图示我们可以缩小一下<code>cost</code>的范围：</p>
+<pre class="r"><code>set.seed(124)
+tmodel &lt;- tune(svm,Species~.,data = iris,
+               ranges = list(epsilon = seq(0,1,0.1,),
+               cost = 2^(2:7)))
+plot(tmodel)</code></pre>
+<p><img src="https://jiaduoli2000.github.io/cn/post/r-svm-support/index_files/figure-html/unnamed-chunk-15-1.png" width="672" />
+<img src="https://gitee.com/alingyisheng/tupian/raw/master/img/20210827235052.png" alt="20210827235052" />
+我们来看看tmodel的摘要：</p>
+<pre class="r"><code>summary(tmodel)</code></pre>
+<pre><code>## 
+## Parameter tuning of &#39;svm&#39;:
+## 
+## - sampling method: 10-fold cross validation 
+## 
+## - best parameters:
+##  epsilon cost
+##        0    8
+## 
+## - best performance: 0.03333333 
+## 
+## - Detailed performance results:
+##    epsilon cost      error dispersion
+## 1      0.0    4 0.04000000 0.04661373
+## 2      0.1    4 0.04000000 0.04661373
+## 3      0.2    4 0.04000000 0.04661373
+## 4      0.3    4 0.04000000 0.04661373
+## 5      0.4    4 0.04000000 0.04661373
+## 6      0.5    4 0.04000000 0.04661373
+## 7      0.6    4 0.04000000 0.04661373
+## 8      0.7    4 0.04000000 0.04661373
+## 9      0.8    4 0.04000000 0.04661373
+## 10     0.9    4 0.04000000 0.04661373
+## 11     1.0    4 0.04000000 0.04661373
+## 12     0.0    8 0.03333333 0.04714045
+## 13     0.1    8 0.03333333 0.04714045
+## 14     0.2    8 0.03333333 0.04714045
+## 15     0.3    8 0.03333333 0.04714045
+## 16     0.4    8 0.03333333 0.04714045
+## 17     0.5    8 0.03333333 0.04714045
+## 18     0.6    8 0.03333333 0.04714045
+## 19     0.7    8 0.03333333 0.04714045
+## 20     0.8    8 0.03333333 0.04714045
+## 21     0.9    8 0.03333333 0.04714045
+## 22     1.0    8 0.03333333 0.04714045
+## 23     0.0   16 0.03333333 0.04714045
+## 24     0.1   16 0.03333333 0.04714045
+## 25     0.2   16 0.03333333 0.04714045
+## 26     0.3   16 0.03333333 0.04714045
+## 27     0.4   16 0.03333333 0.04714045
+## 28     0.5   16 0.03333333 0.04714045
+## 29     0.6   16 0.03333333 0.04714045
+## 30     0.7   16 0.03333333 0.04714045
+## 31     0.8   16 0.03333333 0.04714045
+## 32     0.9   16 0.03333333 0.04714045
+## 33     1.0   16 0.03333333 0.04714045
+## 34     0.0   32 0.05333333 0.07568616
+## 35     0.1   32 0.05333333 0.07568616
+## 36     0.2   32 0.05333333 0.07568616
+## 37     0.3   32 0.05333333 0.07568616
+## 38     0.4   32 0.05333333 0.07568616
+## 39     0.5   32 0.05333333 0.07568616
+## 40     0.6   32 0.05333333 0.07568616
+## 41     0.7   32 0.05333333 0.07568616
+## 42     0.8   32 0.05333333 0.07568616
+## 43     0.9   32 0.05333333 0.07568616
+## 44     1.0   32 0.05333333 0.07568616
+## 45     0.0   64 0.05333333 0.07568616
+## 46     0.1   64 0.05333333 0.07568616
+## 47     0.2   64 0.05333333 0.07568616
+## 48     0.3   64 0.05333333 0.07568616
+## 49     0.4   64 0.05333333 0.07568616
+## 50     0.5   64 0.05333333 0.07568616
+## 51     0.6   64 0.05333333 0.07568616
+## 52     0.7   64 0.05333333 0.07568616
+## 53     0.8   64 0.05333333 0.07568616
+## 54     0.9   64 0.05333333 0.07568616
+## 55     1.0   64 0.05333333 0.07568616
+## 56     0.0  128 0.06000000 0.07336700
+## 57     0.1  128 0.06000000 0.07336700
+## 58     0.2  128 0.06000000 0.07336700
+## 59     0.3  128 0.06000000 0.07336700
+## 60     0.4  128 0.06000000 0.07336700
+## 61     0.5  128 0.06000000 0.07336700
+## 62     0.6  128 0.06000000 0.07336700
+## 63     0.7  128 0.06000000 0.07336700
+## 64     0.8  128 0.06000000 0.07336700
+## 65     0.9  128 0.06000000 0.07336700
+## 66     1.0  128 0.06000000 0.07336700</code></pre>
+<p>这里的方法是10倍交叉验证：10-fold cross validation 。
+最佳表现是：0.03333333。</p>
+</div>
+<div id="最佳模型" class="section level2">
+<h2>最佳模型</h2>
+<pre class="r"><code>mymodel &lt;- tmodel$best.model
+summary(mymodel)</code></pre>
+<pre><code>## 
+## Call:
+## best.tune(method = svm, train.x = Species ~ ., data = iris, ranges = list(epsilon = seq(0, 
+##     1, 0.1, ), cost = 2^(2:7)))
+## 
+## 
+## Parameters:
+##    SVM-Type:  C-classification 
+##  SVM-Kernel:  radial 
+##        cost:  8 
+## 
+## Number of Support Vectors:  35
+## 
+##  ( 6 15 14 )
+## 
+## 
+## Number of Classes:  3 
+## 
+## Levels: 
+##  setosa versicolor virginica</code></pre>
+<p>可以看到最佳模型的各种参数。</p>
+<div id="模型可视化-1" class="section level3">
+<h3>模型可视化：</h3>
+<pre class="r"><code>plot(mymodel,data = iris,
+     Petal.Width~Petal.Length,
+     slice = list(Sepal.Width = 3, Sepal.Length = 4))</code></pre>
+<p><img src="https://jiaduoli2000.github.io/cn/post/r-svm-support/index_files/figure-html/unnamed-chunk-18-1.png" width="672" />
+<img src="https://gitee.com/alingyisheng/tupian/raw/master/img/20210827235136.png" alt="20210827235136" /></p>
+</div>
+<div id="最佳模型的混淆矩阵及分类错误" class="section level3">
+<h3>最佳模型的混淆矩阵及分类错误</h3>
+<pre class="r"><code>pred &lt;- predict(mymodel,iris)
+tab &lt;- table(Predicted = pred,Actual = iris$Species)
+tab</code></pre>
+<pre><code>##             Actual
+## Predicted    setosa versicolor virginica
+##   setosa         50          0         0
+##   versicolor      0         48         0
+##   virginica       0          2        50</code></pre>
+<pre class="r"><code>1-sum(diag(tab))/sum(tab)</code></pre>
+<pre><code>## [1] 0.01333333</code></pre>
+<p>这里错误率是1.3％，真的是<code>最佳</code>。150个点只有2个被错误分类。比之前的要少的多。</p>
+</div>
+</div>
+
+
+  <footer>
+  
+<nav class="post-nav">
+  <span class="nav-prev">&larr; <a href="../../../cn/post/fydeos/">FydeOS折腾记录</a></span>
+  <span class="nav-next"><a href="../../../cn/post/how-to-push-test-to-gitee/">如何推送本地内容到码云（Gitee）？</a> &rarr;</span>
+</nav>
+<script type="text/javascript">
+document.addEventListener('keyup', function(e) {
+  if (e.target.nodeName.toUpperCase() != 'BODY') return;
+  var url = false;
+  if (e.which == 37) {  
+    
+    url = '\/cn\/post\/fydeos\/';
+    
+  } else if (e.which == 39) {  
+    
+    url = '\/cn\/post\/how-to-push-test-to-gitee\/';
+    
+  }
+  if (url) window.location = url;
+});
+</script>
+
+
+
+
+
+<div id="gitalk-container"></div>
+<link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+<script src="https://cdn.bootcss.com/blueimp-md5/2.10.0/js/md5.js"></script>
+<script>
+  const gitalk = new Gitalk({
+    clientID: '7e6bbc8ded3722b80669',
+    clientSecret: '29d16bd7fe99b0bb6a9d0be33755c9d6d2a8a9dc',
+    repo: 'home',
+    owner: 'jiaduoli2000',
+    admin: ['jiaduoli2000'],
+    id: md5(window.location.pathname), 
+    distractionFreeMode: false 
+  });
+  (function() {
+    if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+      document.getElementById('gitalk-container').innerHTML = 'Gitalk comments not available by default when the website is previewed locally.';
+      return;
+    }
+    gitalk.render('gitalk-container');
+  })();
+</script>
+
+
+
+
+
+<script async src="../../../js/fix-toc.js"></script>
+
+<script async src="../../../js/center-img.js"></script>
+
+<script async src="../../../js/right-quote.js"></script>
+
+<script async src="../../../js/no-highlight.js"></script>
+
+<script async src="../../../js/fix-footnote.js"></script>
+
+<script async src="../../../js/math-code.js"></script>
+
+<script async src="../../../js/external-link.js"></script>
+
+<script async src="../../../js/alt-title.js"></script>
+
+<script async src="../../../js/header-link.js"></script>
+
+
+<script src="//yihui.org/js/math-code.js"></script>
+<script async src="//cdn.bootcss.com/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+<script async src="//yihui.org/js/center-img.js"></script>
+
+  
+
+
+
+<script src="//cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+
+
+
+<script src="//cdn.bootcss.com/highlight.js/9.12.0/languages/r.min.js"></script>
+<script src="//cdn.bootcss.com/highlight.js/9.12.0/languages/yaml.min.js"></script>
+<script src="//cdn.bootcss.com/highlight.js/9.12.0/languages/tex.min.js"></script>
+<script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+
+
+
+
+  
+  
+  
+
+  <div class="copyright"><a href="mailto:bettermost@yeah.net"><i class='far fa-envelope fa-1x'></i></a> · <a href="https://github.com/jiaduoli2000"><i class='fab fa-github fa-1x'></i></a> · <a href="https://scholar.google.com/citations?view_op=list_works&amp;hl=zh-CN&amp;user=TC7LswQAAAAJ=zh-CN"><i class='ai ai-google-scholar ai-1x'></i></a> <br> 本站由 <a href="https://gohugo.io">Hugo</a> 和 <a href="https://bookdown.org/yihui/blogdown/">Blogdown</a> 强力驱动 © <a href="../../../">阿狸的Blog</a> 2021 - 2023 </div>
+  
+  
+
+  <script type="text/javascript" src="//rf.revolvermaps.com/0/0/6.js?i=56h9es09xn7&amp;m=6&amp;c=ff0000&amp;cr1=ffffff&amp;f=arial&amp;l=1" async="async"></script>
+  </footer>
+  </article>
+  
+  </body>
+</html>
+
