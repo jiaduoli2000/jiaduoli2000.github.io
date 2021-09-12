@@ -6,7 +6,16 @@
     <description>Recent content in Tags on Blog Lee | 阿狸的Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 10 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://jiaduoli2000.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 12 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://jiaduoli2000.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>obsidian</title>
+      <link>https://jiaduoli2000.github.io/tags/obsidian/</link>
+      <pubDate>Sun, 12 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://jiaduoli2000.github.io/tags/obsidian/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>anki</title>
       <link>https://jiaduoli2000.github.io/tags/anki/</link>
@@ -121,15 +130,6 @@
       <pubDate>Thu, 15 Jul 2021 00:00:00 +0000</pubDate>
       
       <guid>https://jiaduoli2000.github.io/tags/zettlr/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>obsidian</title>
-      <link>https://jiaduoli2000.github.io/tags/obsidian/</link>
-      <pubDate>Fri, 25 Jun 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://jiaduoli2000.github.io/tags/obsidian/</guid>
       <description></description>
     </item>
     

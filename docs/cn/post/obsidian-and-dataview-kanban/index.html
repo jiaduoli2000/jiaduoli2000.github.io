@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    
+    <link rel="stylesheet" href="../../../fonts/academicons-1.8.6/css/academicons.min.css"/>
+    <link rel="icon" type="image/png" sizes="32x32" href="../../../logo/bodhi.png"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    
+    
+    <title>用obsidian的kanban和dataview来管理卡片写作 - 阿狸的Blog</title>
+    
+     
+    <meta property="og:title" content="用obsidian的kanban和dataview来管理卡片写作 - Blog Lee | 阿狸的Blog">
+    
+
+    
+      
+    
+
+    
+
+    
+    
+
+    <link rel="stylesheet" href="../../../css/style.css" />
+    <link rel="stylesheet" href="../../../css/mystyle.css" /> 
+    <link rel="stylesheet" href="../../../css/fonts.css" />
+    
+<script async src="../../../js/load-typekit.js"></script>
+
+
+<link rel="stylesheet" href="../../../css/custom.css" />
+
+  </head>
+  
+  <body class="cn">
+    <header class="masthead">
+      
+
+<h1><a href="https://gitee.com/alingyisheng/tupian/raw/master/img/%E9%98%BF%E7%8B%B8%E5%A4%B4%E5%83%8F%201.png"><img src="../../../logo/ale.png" alt="阿狸的Blog" /></a></h1>
+<p align="right" style="margin-top:-50px;"><small>><i>上士闻道<br>勤而行之</i></small></p>
+
+
+
+
+      <nav class="menu">
+        <input id="menu-check" type="checkbox" />
+        <label id="menu-label" for="menu-check" class="unselectable">
+          <span class="icon close-icon">✕</span>
+          <span class="icon open-icon">☰</span>
+          <span class="text">Menu</span>
+        </label>
+        <ul>
+        
+        
+        <li><a href="../../../">首页</a></li>
+        
+        <li><a href="../../../cn/about/">关于</a></li>
+        
+        <li><a href="../../../cn/post/">博客</a></li>
+        
+        <li><a href="../../../cn/cv-cn/shixiang">简历</a></li>
+        
+        <li><a href="https://gitee.com/alingyisheng/tupian/raw/master/img/%E9%98%BF%E7%8B%B8%E7%9A%84Blog-%E4%BA%8C%E7%BB%B4%E7%A0%81.jpg">公众号</a></li>
+        
+        <li><a href="https://www.zhihu.com/people/aliyisheng">知乎</a></li>
+        
+        
+
+<li class="menu-extra"></li>
+
+
+
+<li><a href="https://github.com/jiaduoli2000/home/edit/master/content/cn%5cpost%5c2021-09-12-obsidian-and-dataview-kanban%5cindex.md" target="_blank">编辑</a></li>
+
+
+<li><a href="../../../cn/index.xml" type="application/rss+xml" title="RSS feed">订阅</a></li>
+
+<li><a href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="Attribution-NonCommercial-ShareAlike 4.0 International">版权</a></li>
+
+
+        </ul>
+      </nav>
+    </header>
+
+    <article class="main">
+      <header class="title">
+        
+
+<h1>用obsidian的kanban和dataview来管理卡片写作</h1>
+
+
+
+<h3>阿狸的Blog &middot 
+2021-09-12</h3> 
+
+
+<p style="text-align:right;">
+  分类:
+  
+    <a href="https://jiaduoli2000.github.io/categories/%E6%95%88%E7%8E%87%E5%B7%A5%E5%85%B7">效率工具</a> &nbsp
+  
+  <br>
+  标签:
+  
+    <a href="https://jiaduoli2000.github.io/tags/obsidian">obsidian</a> &nbsp
+  
+</p>
+
+
+
+   
+  
+
+
+      </header>
+
+
+<p>在上一期视频中，我<a href="https://www.bilibili.com/video/BV1iL411t7Af?spm_id_from=333.999.0.0">用Logseq阅读了《卡片笔记写作法》</a>并分享了我的感受。读完之后，我开始思考一个问题，就是如何更好的用obsidian来管理我的卡片。其中，要解决的核心问题就是卡片的管理与分类，终极目标是写作输出。</p>
+<p>今天的内容是我的一些初步想法，目前还不太成熟，但还是分享给大家。我们先看一下我目前的初级卡片，很显然，大多数笔记是单向链接，是孤立的，并没有与其他内容发生联系。所以，目前我对《卡片笔记写作法》——卡法的使用水平是初级水平，也就是刚刚开始。所以，我想利用一些插件，来对卡片作进一步的整理。让我们开始：</p>
+<p><style>
+  .img-container {
+    text-align: center;
+    display: block;
+  }
+</style>
+
+  <img src="https://gitee.com/alingyisheng/tupian/raw/master/img/20210911210939.png" alt="20210911210939">
+  </span>
+</p>
+<h2 id="dataview-和-kanban-插件">Dataview 和 Kanban 插件</h2>
+<p>关于插件的安装和简单应用我会在视频中介绍，这里主要记录这个想法实现的过程。</p>
+<h3 id="heading"></h3>
+<h3 id="dataview">Dataview</h3>
+<p>Dataview是一个高级查询引擎/索引，用于生成知识库中数据的动态视图。您可以通过标签、文件夹、内容或字段来收集页面，这些都是与页面相关联的任意值。</p>
+<p><style>
+  .img-container {
+    text-align: center;
+    display: block;
+  }
+</style>
+
+  <img src="https://gitee.com/alingyisheng/tupian/raw/master/img/20210911211824.png" alt="20210911211824">
+  </span>
+</p>
+<h3 id="kanban">Kanban</h3>
+<p>这个插件允许创建markdown支持的看板。例如，此看板：</p>
+<p><style>
+  .img-container {
+    text-align: center;
+    display: block;
+  }
+</style>
+
+  <img src="https://gitee.com/alingyisheng/tupian/raw/master/img/20210911212102.png" alt="20210911212102">
+  </span>
+</p>
+<h2 id="使用流程">使用流程</h2>
+<h3 id="建立卡片">建立卡片</h3>
+<p>首先，假设我的卡片笔记已经记好了，比如说这个。这里我通过核心插件”模板“的功能，制作一个卡片模板，为了使内容简单，容易查询，这里在<code>yaml</code>中只设置两个参数，<code>date </code>和<code> tags</code>。然后我开始搜集一些材料，比如说关于<code>kanban</code>插件的官方文档，或是一些插件安装、使用的相关视频。</p>
+<p><style>
+  .img-container {
+    text-align: center;
+    display: block;
+  }
+</style>
+
+  <img src="https://gitee.com/alingyisheng/tupian/raw/master/img/20210911213056.png" alt="20210911213056">
+  </span>
+</p>
+<h3 id="建立看板">建立看板</h3>
+<p>我目前先把我的看板分成四个部分，注意，我这里的想法和很多数人介绍的用法有些不同，我并不想用kanban功能去管理刷牙/洗脸/开会等类似闹钟记事本的功能。我先把看板分成四个部分：<code>素材-想法-写作-发表</code>, 或者可以更精简，<code>素材-写作-发表</code>。</p>
+<p><style>
+  .img-container {
+    text-align: center;
+    display: block;
+  }
+</style>
+
+  <img src="https://gitee.com/alingyisheng/tupian/raw/master/img/20210911214227.png" alt="20210911214227">
+  </span>
+</p>
+<h4 id="素材管理">素材管理</h4>
+<p>这里通过标签功能，在看板中添加卡片，输入<code>#kanban</code>等一些相关标签，来管理素材。这样的好处是，标签搜索比直接输入<code>markdown</code>文件名更方便，而且，如果我们的素材卡片过多的话，单个输入会浪费很多时间。如果更多的话，看板页面根本放不下。我希望我的工作是一种减法的模式，而不是加法。</p>
+<p>另外，要做到这一点，就要求我们在制作基础卡片时，给卡片安一个合适的标签。也就是卡法中说的<strong>关键词</strong>。关键词：如果以后我已经忘记它了，我会在什么情况下偶然发现这条笔记？选择关键词时，一定要着眼于自己正在研究或感兴趣的课题。关键词的设置很关键，同时对于卡片应该限制篇幅。须知，制作卡片是一个作减法的过程。</p>
+<h3 id="管理写作">管理写作</h3>
+<p>当我出现一些想法，或者为某个主题写一篇文章的时候。我们最好当时就记下来，不要理解错了，我的意思是直接写下想法，并不是内容，所以就是建立一个新的markdown文件，输入一个标题。最好在<code>yaml</code>中只设置一些参数，以便我们通过<code>Dataview</code>能够查询到。我目前是这样写的：</p>
+<p><style>
+  .img-container {
+    text-align: center;
+    display: block;
+  }
+</style>
+
+  <img src="https://gitee.com/alingyisheng/tupian/raw/master/img/20210911220615.png" alt="20210911220615">
+  </span>
+</p>
+<p>然后，如果我目前还不打算写的话，我就把这个想法放到看板的<code>想法</code>里; 如果我已经开始写，我就直接在<code>写作</code>中添加卡片，然后通过[[]]找到我前面想好的<code>标题</code>。然后每天晚上写作的时候，我先打开看板，点击写作标题就可以写了。下图是利用dataview插件查看相关文档。</p>
+<p><style>
+  .img-container {
+    text-align: center;
+    display: block;
+  }
+</style>
+
+  <img src="https://gitee.com/alingyisheng/tupian/raw/master/img/20210911221425.png" alt="20210911221425">
+  </span>
+</p>
+<h3 id="归档">归档</h3>
+<p>当我写作完成并发表到我的博客之后，就可以归档了。这就是形成了卡法中的永久链接，比如说今天的内容，整体表达的是我管理写作流程的一种方法。在写这篇博客的过程中，我把我的想法表达出来，让更多的人看到，如果别人也觉得不错的话。说明我的想法是有用的，说明的表达能够被人理解。或者别人已经这样作了，也会赞同我的做法。这也是<code>在看-喜欢-赞同-收藏-转发</code>，这几个反馈反映了被人对你的想法的反应。</p>
+<p>当然，如果说别人不感兴趣或者看不懂，也没有反馈。也不要气馁，至少我理清了自己的思绪，至少对我自己是有指导的，而且，以后我还会对我的想法进行改进。</p>
+<p>这里，看板里每个<code>list</code>右上角的<code>选项</code>里, 都有<code>归档卡片</code>和<code>归档列</code>的功能。我可以理解为主题的管理功能。比如说，在我B站的视频列表里，分了很多个类别，其中有一个就是<code>效率工具</code>。如果有一天，我觉得我不会再写关于这个主题相关的内容，那我就会进行归档。这更适用于系列博客的写作。我目前的输出内容还很少，所以是还没有使用归档功能。</p>
+<p>我又想到一点，为了建立双向链接，也为了查找想法的来源，我们在写作中务必加入参考的基础卡片，这好像是在刻意编织一个大网，到底有没有用处，还不得而知。我准备先尝试一下，将来再和大家分享。</p>
+<h2 id="题外话">题外话</h2>
+<p>扯点没用的，前几日我和一个年轻的朋友聊天，他刚从学校毕业不久。他说他每天都有看书的想法，想着充实一下自己。可结果却是，书还没有打开，就听到手机里传来某个消息的声音。然后一刷，某音、某手，几个小时就过去了。然后，他心里就会产生很大的负罪感。我劝他，这大可不必。人最宝贵的是生命，因为时间不能暂停。用时间来做什么，是一种选择，在可控的时间范围内，也是兴趣所致。你觉得快乐就好了，何必自责呢！“有心为善，虽善不赏；无心为恶，虽恶不罚”。</p>
+<p>应了<u>李白的那首《将进酒》</u>：</p>
+<blockquote>
+<p>君不见黄河之水天上来，奔流到海不复回。<br>
+君不见高堂明镜悲白发，朝如青丝暮成雪。<br>
+人生得意须尽欢，莫使金樽空对月。<br>
+天生我材必有用，千金散尽还复来。<br>
+烹羊宰牛且为乐，会须一饮三百杯。<br>
+岑夫子，丹丘生，将进酒，杯莫停。<br>
+与君歌一曲，请君为我倾耳听。(倾耳听 一作：侧耳听)<br>
+钟鼓馔玉不足贵，但愿长醉不愿醒。(不足贵 一作：何足贵；不愿醒 一作：不复醒)<br>
+古来圣贤皆寂寞，惟有饮者留其名。(古来 一作：自古；惟 通：唯)<br>
+陈王昔时宴平乐，斗酒十千恣欢谑。<br>
+主人何为言少钱，径须沽取对君酌。<br>
+五花马、千金裘，呼儿将出换美酒，与尔同销万古愁。</p>
+</blockquote>
+
+
+  <footer>
+  
+<nav class="post-nav">
+  <span class="nav-prev">&larr; <a href="../../../cn/post/2021-09-10-time-study/index.md/">忆读研时光-师选</a></span>
+  <span class="nav-next"></span>
+</nav>
+<script type="text/javascript">
+document.addEventListener('keyup', function(e) {
+  if (e.target.nodeName.toUpperCase() != 'BODY') return;
+  var url = false;
+  if (e.which == 37) {  
+    
+    url = '\/cn\/post\/2021-09-10-time-study\/index.md\/';
+    
+  } else if (e.which == 39) {  
+    
+  }
+  if (url) window.location = url;
+});
+</script>
+
+
+
+
+
+<div id="gitalk-container"></div>
+<link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+<script src="https://cdn.bootcss.com/blueimp-md5/2.10.0/js/md5.js"></script>
+<script>
+  const gitalk = new Gitalk({
+    clientID: '7e6bbc8ded3722b80669',
+    clientSecret: '29d16bd7fe99b0bb6a9d0be33755c9d6d2a8a9dc',
+    repo: 'home',
+    owner: 'jiaduoli2000',
+    admin: ['jiaduoli2000'],
+    id: md5(window.location.pathname), 
+    distractionFreeMode: false 
+  });
+  (function() {
+    if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+      document.getElementById('gitalk-container').innerHTML = 'Gitalk comments not available by default when the website is previewed locally.';
+      return;
+    }
+    gitalk.render('gitalk-container');
+  })();
+</script>
+
+
+
+
+
+<script async src="../../../js/fix-toc.js"></script>
+
+<script async src="../../../js/center-img.js"></script>
+
+<script async src="../../../js/right-quote.js"></script>
+
+<script async src="../../../js/no-highlight.js"></script>
+
+<script async src="../../../js/fix-footnote.js"></script>
+
+<script async src="../../../js/math-code.js"></script>
+
+<script async src="../../../js/external-link.js"></script>
+
+<script async src="../../../js/alt-title.js"></script>
+
+<script async src="../../../js/header-link.js"></script>
+
+
+<script src="//yihui.org/js/math-code.js"></script>
+<script async src="//cdn.bootcss.com/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+<script async src="//yihui.org/js/center-img.js"></script>
+
+  
+
+
+  
+  
+  
+
+  <div class="copyright"><a href="mailto:bettermost@yeah.net"><i class='far fa-envelope fa-1x'></i></a> · <a href="https://github.com/jiaduoli2000"><i class='fab fa-github fa-1x'></i></a> · <a href="https://scholar.google.com/citations?view_op=list_works&amp;hl=zh-CN&amp;user=TC7LswQAAAAJ=zh-CN"><i class='ai ai-google-scholar ai-1x'></i></a> <br> 本站由 <a href="https://gohugo.io">Hugo</a> 和 <a href="https://bookdown.org/yihui/blogdown/">Blogdown</a> 强力驱动 © <a href="../../../">阿狸的Blog</a> 2021 - 2023 </div>
+  
+  
+
+  <script type="text/javascript" src="//rf.revolvermaps.com/0/0/6.js?i=56h9es09xn7&amp;m=6&amp;c=ff0000&amp;cr1=ffffff&amp;f=arial&amp;l=1" async="async"></script>
+  </footer>
+  </article>
+  
+  </body>
+</html>
+

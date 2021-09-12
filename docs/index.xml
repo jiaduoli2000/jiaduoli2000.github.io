@@ -8,6 +8,15 @@
     <language>en-us</language>
     <lastBuildDate>Sun, 25 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://jiaduoli2000.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>用obsidian的kanban和dataview来管理卡片写作</title>
+      <link>https://jiaduoli2000.github.io/cn/post/obsidian-and-dataview-kanban/</link>
+      <pubDate>Sun, 12 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://jiaduoli2000.github.io/cn/post/obsidian-and-dataview-kanban/</guid>
+      <description>在上一期视频中，我用Logseq阅读了《卡片笔记写作法》并分享了我的感受。读完之后，我开始思考一个问题，就是如何更好的用obsidian来管</description>
+    </item>
+    
+    <item>
       <title>忆读研时光-师选</title>
       <link>https://jiaduoli2000.github.io/cn/post/2021-09-10-time-study/index.md/</link>
       <pubDate>Fri, 10 Sep 2021 00:00:00 +0000</pubDate>
@@ -221,6 +230,15 @@
       
       <guid>https://jiaduoli2000.github.io/cn/post/possion/</guid>
       <description>1.模型简介 [[泊松分布]]的方差和均值相等。当响应变量观测的方差比依据泊松分布预测的方差大时，泊松 回归可能发生过度离势。由于处理计数型数据</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://jiaduoli2000.github.io/cn/post/2021-09-12-%E7%94%A8obsidian%E7%9A%84kanban%E5%92%8Cdataview%E6%9D%A5%E7%AE%A1%E7%90%86%E5%8D%A1%E7%89%87%E5%86%99%E4%BD%9C/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jiaduoli2000.github.io/cn/post/2021-09-12-%E7%94%A8obsidian%E7%9A%84kanban%E5%92%8Cdataview%E6%9D%A5%E7%AE%A1%E7%90%86%E5%8D%A1%E7%89%87%E5%86%99%E4%BD%9C/</guid>
+      <description></description>
     </item>
     
   </channel>
